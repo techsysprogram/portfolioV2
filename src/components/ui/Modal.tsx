@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styles from "@/styles/components/ui/Modal.module.css";
 
 interface ModalProps {
