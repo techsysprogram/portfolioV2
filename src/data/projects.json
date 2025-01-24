@@ -1,0 +1,56 @@
+[
+    {
+      "id": 1,
+      "title": "LIB - Logiciel de lotos associatifs",
+      "summary": "Application pour organiser des lotos associatifs, intégrée à Scanlib. pret pour fonctionner de la meuilleur façon",
+      "description": "LIB est une solution complète pour les associations souhaitant organiser des lotos en ligne. L'application gère la vente des cartons, les tirages et les annonces en direct.",
+      "link": "#",
+      "image": "https://source.unsplash.com/random/800x400?technology"
+    },
+    {
+      "id": 2,
+      "title": "Portfolio",
+      "summary": "Un portfolio interactif et moderne.",
+      "description": [
+        "Ce portfolio présente mes compétences, réalisations et expériences professionnelles.",
+        "Il inclut une interface dynamique et un mode sombre.",
+        "Il est développé avec React et Tailwind CSS.",
+        "Le portfolio est conçu pour être réactif et accessible sur tous les appareils.",
+        "Il met en valeur mes projets à travers des présentations visuelles attrayantes.",
+        "Chaque projet est accompagné de descriptions détaillées et de liens vers les dépôts GitHub.",
+        "Le design est minimaliste et moderne, mettant l'accent sur le contenu.",
+        "Des animations subtiles améliorent l'expérience utilisateur sans distraire.",
+        "Le code est bien structuré et commenté pour faciliter la maintenance.",
+        "Des tests unitaires assurent la fiabilité et la robustesse de l'application.",
+        "Le portfolio est optimisé pour le référencement (SEO) afin d'améliorer la visibilité.",
+        "Il inclut une section de blog pour partager des articles techniques et des tutoriels.",
+        "La navigation est intuitive avec un menu clair et des liens rapides.",
+        "Les performances sont optimisées pour un chargement rapide des pages.",
+        "Le portfolio est hébergé sur une plateforme fiable avec un temps de disponibilité élevé.",
+        "Des mises à jour régulières sont prévues pour ajouter de nouvelles fonctionnalités.",
+        "Il inclut des formulaires de contact sécurisés pour faciliter les échanges professionnels.",
+        "Le portfolio est compatible avec les dernières versions des navigateurs web.",
+        "Il utilise des technologies modernes pour offrir une expérience utilisateur optimale.",
+        "Le design est personnalisable pour refléter l'identité visuelle de l'utilisateur."
+      ],
+      "link": "#",
+      "image": "https://source.unsplash.com/random/800x400?technology"
+    },
+    {
+      "id": 3,
+      "title": "Gestionnaire de tâches",
+      "summary": "Une application intuitive de gestion de tâches.",
+      "description": "Permet de créer, suivre et organiser ses tâches de manière efficace, avec rappels et intégration mobile.",
+      "link": "#",
+      "image": "https://source.unsplash.com/random/800x400?technology"
+    },
+    {
+      "id": 4,
+      "title": "Application E-commerce",
+      "summary": "Une plateforme de vente en ligne avec Stripe.",
+      "description": "Une solution e-commerce permettant de vendre des produits numériques et physiques, avec un paiement sécurisé via Stripe.",
+      "link": "#",
+      "image": "https://source.unsplash.com/random/800x400?technology"
+    }
+  ]
+  

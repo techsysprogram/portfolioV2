@@ -1,0 +1,9 @@
+.footer {
+  background: var(--background);
+  color: var(--foreground);
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid var(--gray-alpha-200);
+  position: relative; /* Assure qu'il ne passe pas derrière */
+  z-index: 10; /* Assure qu'il est bien visible */
+}

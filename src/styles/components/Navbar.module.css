@@ -1,0 +1,123 @@
+/* ✅ Navbar fixe en haut avec animation et effet de flou */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* centrer */
+/*   max-width: 1024px;
+  left: 50%;
+  transform: translateX(-50%); */
+
+  background: var(--background);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  padding: 12px 20px;
+  transition: background 0.3s ease-in-out;
+
+}
+
+/* ✅ Mode sombre */
+.dark .navbar {
+  background: rgba(10, 10, 10, 0.9);
+  backdrop-filter: blur(10px);
+}
+
+/* ✅ Conteneur principal */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1024px;
+  margin: 0 auto;
+
+}
+
+/* ✅ Logo avec hover */
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--foreground);
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  color: var(--primary);
+  transform: scale(1.05);
+}
+
+/* ✅ Menu principal */
+.menu {
+  display: flex;
+  gap: 16px;
+}
+
+/* ✅ Lien du menu */
+.navLink {
+  color: var(--foreground);
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.navLink:hover {
+  background: var(--primary);
+  color: white;
+}
+
+/* ✅ Icône du menu mobile */
+.menuMobile {
+  display: none;
+  cursor: pointer;
+}
+
+.menuMobile svg {
+  width: 28px;
+  height: 28px;
+  color: var(--foreground);
+  transition: transform 0.3s ease-in-out;
+}
+
+.menuMobile:hover svg {
+  transform: scale(1.1);
+}
+
+/* ✅ Menu mobile déroulant */
+.mobileMenu {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: var(--background);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+/* ✅ Menu actif */
+.mobileMenu.active {
+  display: flex;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* ✅ Mode sombre */
+.dark .mobileMenu {
+  background: rgba(10, 10, 10, 0.95);
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .menuMobile {
+    display: block;
+  }
+}

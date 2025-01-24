@@ -1,0 +1,59 @@
+.card {
+  background: var(--muted); /* Utilise la couleur de fond définie */
+  color: var(--foreground);
+  padding: 32px;
+  border-radius: 12px; /* Coins arrondis */
+  box-shadow: 0px 6px 1px rgba(0, 0, 0, 0.15); /* Ombre douce */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Bordure légère */
+  backdrop-filter: blur(5px); /* Effet de flou subtil */
+  margin-bottom: 20px;
+  min-height: 150px; /* Assure une taille minimale */
+
+}
+
+/* Effet au survol */
+.card:hover {
+  transform: translateY(-8px); /* Légère élévation au survol */
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card div {
+}
+
+.cardTitle {
+  font-size: clamp(0.9rem, 3vw, 1.1rem);
+  font-weight: bold;
+  color: var(--primary-dark);
+  margin-bottom: 20px;
+
+  white-space: nowrap; /* Empêche le texte de passer à la ligne suivante */
+  overflow: hidden; /* Cache le texte qui dépasse */
+  text-overflow: ellipsis; /* Ajoute "..." à la fin si le texte est trop long */
+
+  /* Animation de changement de couleur */
+  animation: textColorAnimation 5s linear infinite;
+}
+
+/* Animation */
+@keyframes textColorAnimation {
+  0% { color: #3b82f6; }  /* Bleu clair */
+  25% { color: #2563eb; } /* Bleu plus foncé */
+  50% { color: #3e60bf; } /* Bleu profond */
+  75% { color: #4f46e5; } /* Bleu violet */
+  100% { color: #3b82f6; } /* Retour à la couleur initiale */
+}
+
+.cardSummary {
+  font-size: clamp(0.9rem, 3vw, 1rem);
+  color: var(--foreground);
+
+  margin-bottom: 20px;
+  height: 2.5em; /* Ajuste en fonction de la hauteur de ligne */
+  line-height: 1.2em; /* Hauteur d'une ligne */
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limite à 2 lignes */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

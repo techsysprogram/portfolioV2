@@ -1,0 +1,78 @@
+/* Conteneur du switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* Masquer l'input */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Slider principal */
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--gray-alpha-200);
+  border-radius: 34px;
+  transition: background 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px;
+}
+
+/* Effet de surbrillance au changement */
+.switch input:checked + .slider {
+  background-color: var(--primary);
+  box-shadow: 0px 0px 10px rgba(37, 99, 235, 0.5);
+}
+
+/* Icônes */
+.icon {
+  width: 18px;
+  height: 18px;
+  color: var(--foreground);
+  position: absolute;
+  transition: transform 0.3s ease;
+}
+
+/* Animation d'apparition de l'icône Soleil 🌞 */
+.sun {
+  left: 6px;
+  transform: scale(1);
+}
+
+.switch input:not(:checked) + .slider .sun {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.switch input:checked + .slider .sun {
+  opacity: 0;
+  transform: scale(0.6);
+}
+
+/* Animation d'apparition de l'icône Lune 🌙 */
+.moon {
+  right: 6px;
+  transform: scale(0.6);
+}
+
+.switch input:not(:checked) + .slider .moon {
+  opacity: 0;
+  transform: scale(0.6);
+}
+
+.switch input:checked + .slider .moon {
+  opacity: 1;
+  transform: scale(1);
+}
