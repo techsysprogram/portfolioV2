@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
+import Skills from "@/components/Skills"; // Import du composant
 
 export default function Home() {
   const { isDarkMode } = useTheme(); // 🔥 Accède au mode sombre
@@ -17,6 +18,7 @@ export default function Home() {
       <div className="main-global">
         <Hero />
         <About />
+        <Skills /> 
         <Projects />
         <Contact />
       </div>
