@@ -22,6 +22,7 @@ const languagesData = [
   { id: 14, name: "Python", image: "https://res.cloudinary.com/dshznc4xx/image/upload/v1737737083/python-5_aqquxl.svg" },
   { id: 24, name: "WinDev", image: "https://res.cloudinary.com/dshznc4xx/image/upload/c_crop,ar_1:1/v1737736515/windev_wedm8y.png" },
   { id: 25, name: "C++", image: "https://res.cloudinary.com/dshznc4xx/image/upload/v1737740033/c_x3chkb.svg" },
+  { id: 26, name: "Php", image: "https://res.cloudinary.com/dshznc4xx/image/upload/v1737741370/laragon_lahoeg.svg" },
 ];
 
 // Liste Bases de données & Backend
@@ -29,6 +30,9 @@ const backendData = [
   { id: 15, name: "MongoDB", image: "https://res.cloudinary.com/dshznc4xx/image/upload/v1737735139/mongodb-icon-1_lceztg.svg" },
   { id: 16, name: "Node.js", image: "https://res.cloudinary.com/dshznc4xx/image/upload/v1737735140/nodejs-2_jb5fqs.svg" },
   { id: 17, name: "Express", image: "https://res.cloudinary.com/dshznc4xx/image/upload/v1737735139/express-109_dpusg1.svg" },
+  { id: 28, name: "PostgreSQL", image: "https://res.cloudinary.com/dshznc4xx/image/upload/v1737741696/postgresql_vqakwd.svg" },
+  { id: 29, name: "MySQL", image: "https://res.cloudinary.com/dshznc4xx/image/upload/v1737741696/mysql-4_whxv4n.svg" },
+  { id: 29, name: "SQLite", image: "https://res.cloudinary.com/dshznc4xx/image/upload/v1737741777/sqlite_inpz2m.svg" },
 ];
 
 // Liste des Outils & DevOps
@@ -39,6 +43,7 @@ const toolsData = [
   { id: 21, name: "Expo", image: "https://res.cloudinary.com/dshznc4xx/image/upload/v1737739130/expo-1_tjsh1y.svg" },
   { id: 22, name: "Arduino", image: "https://res.cloudinary.com/dshznc4xx/image/upload/v1737739131/arduino-1_nkm4o8.svg" },
   { id: 23, name: "OAuth & JWT", image: "https://res.cloudinary.com/dshznc4xx/image/upload/v1737740381/jwt-3_ghqqwx.svg" },
+  { id: 27, name: "WordPress", image: "https://res.cloudinary.com/dshznc4xx/image/upload/v1737741371/wordpress-icon-1_vynl7b.svg" },
 ];
 
 export default function Skills() {
