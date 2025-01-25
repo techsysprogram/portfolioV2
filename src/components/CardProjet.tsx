@@ -1,6 +1,6 @@
-/* import { useState } from "react"; */ // ✅ Correction : Import useState
 import Button from "./ui/Button";
-import styles from "@/styles/components/ui/Card.module.css"; // ✅ Correction : Utilisation correcte de "styles"
+import styles from "@/styles/components/ui/Card.module.css";
+import Link from "next/link";
 
 interface Project {
   id: number | string;
@@ -8,23 +8,27 @@ interface Project {
   summary: string;
   description: string | string[];
   link: string;
-  image: string;
+  image?: string;
 }
 
-
 const CardProjet = ({ project }: { project: Project }) => {
-  /* const [open, setOpen] = useState(false); */
-
   return (
     <div className={styles.card}>
-      <div>
-        <h3 className={styles.cardTitle}>{project.title}</h3>
-        <p className={styles.cardSummary}>{project.summary}</p>
-        {/* <Button onClick={() => setOpen(true)} variant="simple"> */}
-        <Button variant="simple">
-          Voir plus
-        </Button>
-      </div>
+      <Link href={`/projects/${project.id}`} passHref>
+        {project.image && project.image.trim() !== "" && (
+          <div className={styles.imageContainer}>
+            <img
+              src={project.image}
+              alt={project.title}
+              className={styles.cardImage}
+            />
+          </div>
+        )}
+        <div className={styles.cardContent}>
+          <h3 className={styles.cardTitle}>{project.title}</h3>
+          <p className={styles.cardSummary}>{project.summary}</p>
+        </div>
+      </Link>
     </div>
   );
 };

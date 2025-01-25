@@ -1,56 +1,79 @@
 [
-    {
-      "id": 1,
-      "title": "LIB - Logiciel de lotos associatifs",
-      "summary": "Application pour organiser des lotos associatifs, intégrée à Scanlib. pret pour fonctionner de la meuilleur façon",
-      "description": "LIB est une solution complète pour les associations souhaitant organiser des lotos en ligne. L'application gère la vente des cartons, les tirages et les annonces en direct.",
-      "link": "#",
-      "image": "https://source.unsplash.com/random/800x400?technology"
-    },
-    {
-      "id": 2,
-      "title": "Portfolio",
-      "summary": "Un portfolio interactif et moderne.",
-      "description": [
-        "Ce portfolio présente mes compétences, réalisations et expériences professionnelles.",
-        "Il inclut une interface dynamique et un mode sombre.",
-        "Il est développé avec React et Tailwind CSS.",
-        "Le portfolio est conçu pour être réactif et accessible sur tous les appareils.",
-        "Il met en valeur mes projets à travers des présentations visuelles attrayantes.",
-        "Chaque projet est accompagné de descriptions détaillées et de liens vers les dépôts GitHub.",
-        "Le design est minimaliste et moderne, mettant l'accent sur le contenu.",
-        "Des animations subtiles améliorent l'expérience utilisateur sans distraire.",
-        "Le code est bien structuré et commenté pour faciliter la maintenance.",
-        "Des tests unitaires assurent la fiabilité et la robustesse de l'application.",
-        "Le portfolio est optimisé pour le référencement (SEO) afin d'améliorer la visibilité.",
-        "Il inclut une section de blog pour partager des articles techniques et des tutoriels.",
-        "La navigation est intuitive avec un menu clair et des liens rapides.",
-        "Les performances sont optimisées pour un chargement rapide des pages.",
-        "Le portfolio est hébergé sur une plateforme fiable avec un temps de disponibilité élevé.",
-        "Des mises à jour régulières sont prévues pour ajouter de nouvelles fonctionnalités.",
-        "Il inclut des formulaires de contact sécurisés pour faciliter les échanges professionnels.",
-        "Le portfolio est compatible avec les dernières versions des navigateurs web.",
-        "Il utilise des technologies modernes pour offrir une expérience utilisateur optimale.",
-        "Le design est personnalisable pour refléter l'identité visuelle de l'utilisateur."
-      ],
-      "link": "#",
-      "image": "https://source.unsplash.com/random/800x400?technology"
-    },
-    {
-      "id": 3,
-      "title": "Gestionnaire de tâches",
-      "summary": "Une application intuitive de gestion de tâches.",
-      "description": "Permet de créer, suivre et organiser ses tâches de manière efficace, avec rappels et intégration mobile.",
-      "link": "#",
-      "image": "https://source.unsplash.com/random/800x400?technology"
-    },
-    {
-      "id": 4,
-      "title": "Application E-commerce",
-      "summary": "Une plateforme de vente en ligne avec Stripe.",
-      "description": "Une solution e-commerce permettant de vendre des produits numériques et physiques, avec un paiement sécurisé via Stripe.",
-      "link": "#",
-      "image": "https://source.unsplash.com/random/800x400?technology"
-    }
-  ]
+  {
+    "id": 1,
+    "title": "LIB - Logiciel de lotos associatifs",
+    "summary": "Application pour organiser des lotos associatifs, intégrée à Scanlib.",
+    "description": "LIB est une solution complète pour les associations souhaitant organiser des lotos en ligne. L'application gère la vente des cartons, les tirages et les annonces en direct.",
+    "links": [
+      "https://www.cartaloto.com",
+      "https://www.scanlib.com"
+    ],
+    "linkNames": [
+      "Cartaloto",
+      "Scanlib"
+    ],
+    "images": [
+      "https://source.unsplash.com/featured/?lottery",
+      "https://source.unsplash.com/featured/?gaming"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Portfolio - MERN",
+    "summary": "Mes compétences en développement web, intégrant des projets concrets et interactifs.",
+    "description": [
+      "Ce portfolio met en avant mon expertise en développement fullstack avec la stack MERN (MongoDB, Express, React, Node.js).",
+      "J'y présente mes réalisations, dont des plateformes interactives",
+      "Chaque projet reflète mes compétences en intégration d'API, gestion d'authentification, optimisation des performances et responsive design.",
+      "Le portfolio adopte une interface moderne et réactive, avec un mode sombre intégré pour une expérience utilisateur optimale.",
+      "Développé avec React et CSS, il démontre mon savoir-faire en création d'interfaces fluides et accessibles.",
+      "Mon objectif est de proposer des solutions techniques performantes et adaptées aux besoins spécifiques des clients."
+    ],
+    "links": [
+      "https://conciergerie-occitanie.netlify.app/",
+      "https://marvel-miguel.netlify.app/",
+      "https://vinted-miguel.netlify.app/"
+    ],
+    "linkNames": [
+      "Livret d'accueil - Conciergerie Occitanie",
+      "Marvel Clone - Recherche de super-héros avec API Marvel",
+      "Vinted Clone - Marketplace de seconde main"
+    ],
+    "images": [
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737735173/mern_i1ubic.png"
+    ]
+  },
   
+  {
+    "id": 3,
+    "title": "Gestionnaire de tâches",
+    "summary": "Une application intuitive de gestion de tâches.",
+    "description": "Permet de créer, suivre et organiser ses tâches de manière efficace, avec rappels et intégration mobile.",
+    "links": [
+      "https://taskmanager.miguel-bellota.com"
+    ],
+    "linkNames": [
+      "Gestionnaire de tâches"
+    ],
+    "images": [
+      "https://source.unsplash.com/featured/?tasks",
+      "https://source.unsplash.com/featured/?productivity"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "QuizTime",
+    "summary": "Une plateforme de quiz interactifs.",
+    "description": "Une solution e-learning permettant de créer et partager des quiz pour tester ses connaissances.",
+    "links": [
+      "https://quiztime.miguel-bellota.com"
+    ],
+    "linkNames": [
+      "QuizTime"
+    ],
+    "images": [
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737543867/conciergerie/67640726aae7bb2b806196e1/optImgs_678e25515752cc030184ead0/optId7_P1_img1.jpg",
+      "https://source.unsplash.com/featured/?quiz"
+    ]
+  }
+]

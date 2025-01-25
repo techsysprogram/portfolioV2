@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import projectsData from "@/data/projects.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
@@ -12,8 +13,18 @@ import "@/styles/text-styles.css"; // Importe les styles globaux
 import Card from "@/components/CardProjet";
 
 export default function Projects() {
+  const router = useRouter();
+
+  const handleProjectClick = (projectId: number) => {
+    // Stocke la position actuelle du scroll
+    sessionStorage.setItem("scrollPosition", window.scrollY.toString());
+
+    // Navigue vers la page du projet
+    router.push(`/projects/${projectId}`);
+  };
+
   return (
-    <section className={styles.projects}>
+    <section className={styles.projects} id="projects">
       <h2 className="title">Projets récents</h2>
 
       <div className={styles.sliderContainer}>
@@ -24,7 +35,7 @@ export default function Projects() {
 
         {/* Slider Swiper */}
         <Swiper
-          className={styles.sliderCards}
+          className={styles.swiperWrapper}
           modules={[Navigation, Pagination]}
           navigation={{
             nextEl: ".swiper-button-next",
@@ -39,7 +50,7 @@ export default function Projects() {
           }}
         >
           {projectsData.map((project) => (
-            <SwiperSlide key={project.id}>
+            <SwiperSlide key={project.id} onClick={() => handleProjectClick(project.id)}>
               <Card project={project} />
             </SwiperSlide>
           ))}

@@ -1,0 +1,58 @@
+.projectContainer {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px 20px 40px 20px;
+  text-align: center;
+  background: var(--primary-foreground);
+  border-radius: 12px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.projectSwiper {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.swiperSlide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectImage {
+  width: 100%;
+  max-height: 450px;
+  object-fit: contain;
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.descriptionContainer {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+  max-width: 750px;
+  margin: auto;
+  /* text-align: left; */
+  /* background: rgba(255, 255, 255, 0.1); */
+  border-radius: 10px;
+}
+
+/* Conteneur des liens */
+.linksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.error {
+  text-align: center;
+  font-size: 1.5rem;
+  color: red;
+}

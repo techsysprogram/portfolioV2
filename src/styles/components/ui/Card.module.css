@@ -21,6 +21,26 @@
 .card div {
 }
 
+.imageContainer {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardContent {
+  padding: 15px;
+}
+
+
 .cardTitle {
   font-size: clamp(0.9rem, 3vw, 1.1rem);
   font-weight: bold;
@@ -48,11 +68,10 @@
   font-size: clamp(0.9rem, 3vw, 1rem);
   color: var(--foreground);
 
-  margin-bottom: 20px;
-  height: 2.5em; /* Ajuste en fonction de la hauteur de ligne */
+  height: 3.6rem; /* Ajuste en fonction de la hauteur de ligne */
   line-height: 1.2em; /* Hauteur d'une ligne */
   display: -webkit-box;
-  -webkit-line-clamp: 2; /* Limite à 2 lignes */
+  -webkit-line-clamp: 3; /* Limite à 3 lignes */
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
