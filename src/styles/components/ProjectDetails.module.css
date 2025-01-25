@@ -1,11 +1,14 @@
 .projectContainer {
   max-width: 900px;
-  margin: auto;
+  /* centrer */
+    margin: 0 auto;
+    
   padding: 20px 20px 40px 20px;
   text-align: center;
   background: var(--primary-foreground);
   border-radius: 12px;
   box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+
 }
 
 .projectSwiper {

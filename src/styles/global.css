@@ -96,6 +96,8 @@ body {
 .main-global {
   max-width: 1024px;
   margin: 0 auto;
+  /* centrer */
+  
 
   display: flex;
   flex-direction: column;
