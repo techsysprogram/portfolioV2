@@ -1,8 +1,6 @@
-"use client";
-
 import styles from "@/styles/components/CardProjet.module.css";
 import Link from "next/link";
-import Image from "next/image"; // ✅ Import utilisé correctement
+import Image from "next/image";
 
 interface Project {
   id: number | string;
@@ -10,23 +8,23 @@ interface Project {
   summary: string;
   description: string | string[];
   link: string;
-  image?: string;
+  images?: string[]; // 🔥 Correction : `images` est un tableau
 }
 
 const CardProjet = ({ project }: { project: Project }) => {
   return (
     <div className={styles.card}>
       <Link href={`/projects/${project.id}`} className={styles.cardLink}>
-        {project.image && project.image.trim() !== "" && (
+        {/* ✅ Vérification si `images` existe et contient au moins une image */}
+        {project.images && project.images.length > 0 && (
           <div className={styles.imageContainer}>
             {/* ✅ Utilisation correcte de `next/image` */}
             <Image
-              src={project.image}
+              src={project.images[0]} // 🔥 Correction : on prend la première image
               alt={project.title}
-              width={300} // Ajuste selon ton design
-              height={200} // Ajuste selon ton design
+              width={300} // ✅ Remplace `layout="responsive"`
+              height={200} // ✅ Ajout de la hauteur pour éviter l'erreur
               className={styles.cardImage}
-              priority // Charge l’image en priorité
             />
           </div>
         )}

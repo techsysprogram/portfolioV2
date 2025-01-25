@@ -1,10 +1,10 @@
-"use client";
+"use client"; // ✅ Ce fichier est un Client Component
 
 import { useEffect, useState } from "react";
-import { useRouter, useParams } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation"; // ✅ Corrigé pour Next.js 15
 import projectsData from "@/data/projects.json";
 import styles from "@/styles/components/ProjectDetails.module.css";
-import "@/styles/text-styles.css"; 
+import "@/styles/text-styles.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -12,18 +12,30 @@ import { Navigation, Pagination } from "swiper/modules";
 import Button from "@/components/ui/Button";
 import Image from "next/image";
 
+interface Project {
+  id: number | string;
+  title: string;
+  summary: string;
+  description: string | string[];
+  links: string[];
+  linkNames: string[];
+  images: string[];
+}
+
 export default function ProjectDetails() {
   const router = useRouter();
-  const params = useParams();
-  const [project, setProject] = useState(null);
+  const searchParams = useSearchParams(); // ✅ Utilisation correcte pour récupérer l'ID
+  const projectId = searchParams.get("id"); // ✅ Récupération de l'ID depuis l'URL
+
+  const [project, setProject] = useState<Project | null>(null);
 
   useEffect(() => {
-    if (params?.id) {
-      const foundProject = projectsData.find((p) => p.id.toString() === params.id);
+    if (projectId) {
+      const foundProject = projectsData.find((p) => p.id.toString() === projectId) || null;
       setProject(foundProject);
     }
     window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [params]);
+  }, [projectId]);
 
   if (!project) {
     return <p className={`${styles.error} text`}>Projet non trouvé.</p>;
@@ -32,7 +44,6 @@ export default function ProjectDetails() {
   const handleBackClick = () => {
     const scrollPosition = sessionStorage.getItem("scrollPosition");
     router.push("/");
-
     setTimeout(() => {
       if (scrollPosition) {
         window.scrollTo({
@@ -47,6 +58,7 @@ export default function ProjectDetails() {
     <div className={styles.projectContainer}>
       <h1 className="title">{project.title}</h1>
 
+      {/* Swiper Carousel */}
       {project.images && project.images.length > 0 && (
         <Swiper
           className={styles.projectSwiper}
@@ -63,7 +75,6 @@ export default function ProjectDetails() {
                 width={800}
                 height={400}
                 className={styles.projectImage}
-                priority
               />
             </SwiperSlide>
           ))}
@@ -83,6 +94,7 @@ export default function ProjectDetails() {
         )}
       </div>
 
+      {/* Liens */}
       {project.links && project.links.length > 0 && (
         <div className={styles.linksContainer}>
           {project.links.map((link, index) => (
@@ -93,7 +105,7 @@ export default function ProjectDetails() {
               rel="noopener noreferrer"
               className="link"
             >
-              🔗 {project.linkNames && project.linkNames[index] ? project.linkNames[index] : `Voir le projet`}
+              🔗 {project.linkNames?.[index] ?? `Voir le projet`}
             </a>
           ))}
         </div>

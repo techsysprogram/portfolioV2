@@ -3,11 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   reactStrictMode: false, // Désactive le double montage en développement
   experimental: {
-    serverActions: true, // Active les actions serveur
-  },
-  future: {
-    v7_startTransition: true, // Active React.startTransition
-    v7_relativeSplatPath: true, // Active la nouvelle gestion des routes Next.js
+    serverActions: {}, // ✅ Syntaxe correcte pour activer les actions serveur
   },
   images: {
     domains: [
@@ -15,7 +11,7 @@ const nextConfig: NextConfig = {
       "source.unsplash.com", // 🔥 Unsplash
     ],
   },
-  output: "standalone", // ✅ Mode standalone pour les services comme Northflank
+  output: "standalone", // ✅ Permet le déploiement sur Northflank
 };
 
 export default nextConfig;

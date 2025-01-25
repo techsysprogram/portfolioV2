@@ -8,18 +8,15 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import styles from "@/styles/components/Projects.module.css"; // Import des styles
-import "@/styles/text-styles.css"; // Importe les styles globaux
+import styles from "@/styles/components/Projects.module.css";
+import "@/styles/text-styles.css";
 import Card from "@/components/CardProjet";
 
 export default function Projects() {
   const router = useRouter();
 
   const handleProjectClick = (projectId: number) => {
-    // Stocke la position actuelle du scroll
     sessionStorage.setItem("scrollPosition", window.scrollY.toString());
-
-    // Navigue vers la page du projet
     router.push(`/projects/${projectId}`);
   };
 
@@ -51,7 +48,12 @@ export default function Projects() {
         >
           {projectsData.map((project) => (
             <SwiperSlide key={project.id} onClick={() => handleProjectClick(project.id)}>
-              <Card project={project} />
+              <Card 
+                project={{
+                  ...project,
+                  link: project.links?.[0] || "", // 🔥 Correction : Définit `link` comme le premier élément de `links`
+                }} 
+              />
             </SwiperSlide>
           ))}
         </Swiper>
