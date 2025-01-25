@@ -12,25 +12,24 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import styles from "@/styles/components/Projects.module.css";
 import "@/styles/text-styles.css";
 import Card from "@/components/CardProjet";
+import { Swiper as SwiperClass } from "swiper/types"; // ✅ Import du type correct
 
 export default function Projects() {
   const router = useRouter();
   const [activeProjectIndex, setActiveProjectIndex] = useState(0);
-  const swiperRef = useRef<any>(null); // 🔥 Référence pour Swiper
+  const swiperRef = useRef<SwiperClass | null>(null); // ✅ Correction ici
 
   useEffect(() => {
-    // 🔥 Récupérer l'ID du dernier projet consulté
     const lastViewedProjectId = sessionStorage.getItem("lastViewedProjectId");
 
     if (lastViewedProjectId) {
       const foundIndex = projectsData.findIndex((p) => p.id.toString() === lastViewedProjectId);
       if (foundIndex !== -1) {
-        setActiveProjectIndex(foundIndex); // 🔥 Définit le projet actif
+        setActiveProjectIndex(foundIndex);
       }
-      sessionStorage.removeItem("lastViewedProjectId"); // Nettoie après usage
+      sessionStorage.removeItem("lastViewedProjectId");
     }
 
-    // 🔥 Restaurer la position du scroll
     const scrollPosition = sessionStorage.getItem("scrollPosition");
     if (scrollPosition) {
       window.scrollTo({ top: parseInt(scrollPosition, 10), behavior: "smooth" });
@@ -39,14 +38,14 @@ export default function Projects() {
   }, []);
 
   useEffect(() => {
-    // 🔥 Une fois Swiper monté, on le déplace vers le bon projet
-    if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.slideTo(activeProjectIndex, 0); // 🔥 Déplace le slider immédiatement
+    if (swiperRef.current) {
+      swiperRef.current.slideTo(activeProjectIndex, 0); // ✅ Correction ici
     }
   }, [activeProjectIndex]);
 
   const handleProjectClick = (projectId: number) => {
     sessionStorage.setItem("scrollPosition", window.scrollY.toString());
+    sessionStorage.setItem("lastViewedProjectId", projectId.toString()); // ✅ Sauvegarde du projet affiché
     router.push(`/projects/${projectId}`);
   };
 
@@ -62,7 +61,9 @@ export default function Projects() {
 
         {/* Slider Swiper */}
         <Swiper
-          ref={swiperRef} // 🔥 Ajout de la référence Swiper
+          ref={(node) => {
+            if (node) swiperRef.current = node.swiper;
+          }} // ✅ Référence correcte à Swiper
           className={styles.swiperWrapper}
           modules={[Navigation, Pagination]}
           navigation={{
