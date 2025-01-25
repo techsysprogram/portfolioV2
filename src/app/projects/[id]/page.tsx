@@ -11,6 +11,7 @@ import "swiper/css/navigation";
 import { Navigation, Pagination } from "swiper/modules";
 import Button from "@/components/ui/Button";
 import Image from "next/image";
+import { ArrowLeft } from "lucide-react"; // ✅ Import de l'icône
 
 interface Project {
   id: number | string;
@@ -24,8 +25,8 @@ interface Project {
 
 export default function ProjectDetails() {
   const router = useRouter();
-  const params = useParams(); // ✅ Récupération des paramètres dynamiques
-  const projectId = params.id as string; // 🔥 Conversion en `string` pour éviter les erreurs TypeScript
+  const params = useParams();
+  const projectId = params.id as string;
   const [project, setProject] = useState<Project | null>(null);
 
   useEffect(() => {
@@ -43,7 +44,7 @@ export default function ProjectDetails() {
   }
 
   const handleBackClick = () => {
-    sessionStorage.setItem("lastViewedProjectId", projectId); // 🔥 Sauvegarde l'ID du projet affiché
+    sessionStorage.setItem("lastViewedProjectId", projectId);
     const scrollPosition = sessionStorage.getItem("scrollPosition");
     router.push("/");
     setTimeout(() => {
@@ -58,6 +59,12 @@ export default function ProjectDetails() {
 
   return (
     <div className={styles.projectContainer}>
+      <section>
+        <Button onClick={handleBackClick} variant="secondary">
+          <ArrowLeft size={20} /> Revenir aux projets
+        </Button>
+      </section>
+
       <h1 className="title">{project.title}</h1>
 
       {/* Swiper Carousel */}
@@ -113,9 +120,11 @@ export default function ProjectDetails() {
         </div>
       )}
 
-      <Button onClick={handleBackClick} variant="secondary">
-        ⬅ Revenir aux projets
-      </Button>
+      <section>
+        <Button onClick={handleBackClick} variant="secondary">
+          <ArrowLeft size={20} /> Revenir aux projets
+        </Button>
+      </section>
     </div>
   );
 }

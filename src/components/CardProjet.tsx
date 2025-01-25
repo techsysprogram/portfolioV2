@@ -14,10 +14,10 @@ interface Project {
 const CardProjet = ({ project }: { project: Project }) => {
   return (
     <div className={styles.card}>
-      <Link href={`/projects/${project.id}`} className={styles.cardLink}>
-        {/* ✅ Vérification si `images` existe et contient au moins une image */}
-        {project.images && project.images.length > 0 && (
-          <div className={styles.imageContainer}>
+      {/* ✅ Vérification si `images` existe et contient au moins une image */}
+      {project.images && project.images.length > 0 && (
+        <div className={styles.imageContainer}>
+          <Link href={`/projects/${project.id}`} className={styles.cardLink}>
             {/* ✅ Utilisation correcte de `next/image` */}
             <Image
               src={project.images[0]} // 🔥 Correction : on prend la première image
@@ -26,13 +26,13 @@ const CardProjet = ({ project }: { project: Project }) => {
               height={200} // ✅ Ajout de la hauteur pour éviter l'erreur
               className={styles.cardImage}
             />
-          </div>
-        )}
-        <div className={styles.cardContent}>
-          <h3 className={styles.cardTitle}>{project.title}</h3>
-          <p className={styles.cardSummary}>{project.summary}</p>
+          </Link>
         </div>
-      </Link>
+      )}
+      <div className={styles.cardContent}>
+        <h3 className={styles.cardTitle}>{project.title}</h3>
+        <p className={styles.cardSummary}>{project.summary}</p>
+      </div>
     </div>
   );
 };

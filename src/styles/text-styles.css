@@ -31,12 +31,12 @@
 .link {
   font-size: clamp(0.8rem, 3vw, 1rem);
   font-weight: bold;
-  color: var(--primary);
+  color: var(--link-1);
   text-decoration: none;
   transition: color 0.3s, transform 0.3s;
 }
 
 .link:hover {
-  color: var(--primary-dark);
+  color: var(--linkhover-1);
   transform: scale(1.05);
 }

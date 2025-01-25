@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
-import { useRouter } from "next/navigation";
 import projectsData from "@/data/projects.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
@@ -15,7 +14,6 @@ import Card from "@/components/CardProjet";
 import { Swiper as SwiperClass } from "swiper/types"; // ✅ Import du type correct
 
 export default function Projects() {
-  const router = useRouter();
   const [activeProjectIndex, setActiveProjectIndex] = useState<number | null>(null);
   const swiperRef = useRef<SwiperClass | null>(null);
 
@@ -51,7 +49,6 @@ export default function Projects() {
   const handleProjectClick = (projectId: number) => {
     sessionStorage.setItem("scrollPosition", window.scrollY.toString());
     sessionStorage.setItem("lastViewedProjectId", projectId.toString());
-    router.push(`/projects/${projectId}`);
   };
 
   return (

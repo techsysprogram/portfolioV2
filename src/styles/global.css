@@ -26,6 +26,9 @@
   --chart-5: rgba(255, 165, 0, 1);
   --radius: 0.5rem;
 
+  --link-1: rgba(255, 102, 0, 1);
+  --linkhover-1: rgb(201, 82, 3);
+
   --gray-alpha-200: rgba(0, 0, 0, 0.08);
   --gray-alpha-100: rgba(0, 0, 0, 0.05);
 }
@@ -56,6 +59,9 @@
   --chart-3: rgba(255, 165, 0, 1);
   --chart-4: rgba(128, 0, 128, 1);
   --chart-5: rgba(255, 0, 0, 1);
+
+  --link-1: rgb(201, 82, 3);
+  --linkhover-1: rgba(255, 102, 0, 1);
 
   --gray-alpha-200: rgba(255, 255, 255, 0.08);
   --gray-alpha-100: rgba(255, 255, 255, 0.06);

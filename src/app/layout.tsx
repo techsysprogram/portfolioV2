@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/context/ThemeProvider"; // 🔥 Import du contexte global
 
 export const metadata: Metadata = {
-  title: "Mon Portfolio",
+  title: "Miguel Bellota - Portfolio",
   description: "Portfolio développé avec Next.js et CSS pur",
 };
 
@@ -17,7 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body>
-        <ThemeProvider> {/* 🔥 On englobe toute l'application */}
+        <ThemeProvider> 
           <Navbar />
           <main>{children}</main>
           <Footer />
