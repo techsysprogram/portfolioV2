@@ -10,8 +10,7 @@ const nextConfig: NextConfig = {
       "res.cloudinary.com", // 🔥 Cloudinary
       "source.unsplash.com", // 🔥 Unsplash
     ],
-  },
-  output: "standalone", // ✅ Permet le déploiement sur Northflank
+  }
 };
 
 export default nextConfig;
