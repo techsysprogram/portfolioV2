@@ -1,10 +1,10 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useRouter, useParams } from "next/navigation";
 import projectsData from "@/data/projects.json";
 import styles from "@/styles/components/ProjectDetails.module.css";
-import "@/styles/text-styles.css"; // Ajout du fichier de styles global
+import "@/styles/text-styles.css"; 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -14,26 +14,25 @@ import Image from "next/image";
 
 export default function ProjectDetails() {
   const router = useRouter();
-  const params = useParams(); // ✅ Récupération correcte des paramètres d'URL
-  const project = projectsData.find((p) => p.id.toString() === params?.id);
+  const params = useParams();
+  const [project, setProject] = useState(null);
 
-  // 🔥 Défilement automatique en haut au chargement de la page
   useEffect(() => {
+    if (params?.id) {
+      const foundProject = projectsData.find((p) => p.id.toString() === params.id);
+      setProject(foundProject);
+    }
     window.scrollTo({ top: 0, behavior: "smooth" });
-  }, []);
+  }, [params]);
 
   if (!project) {
     return <p className={`${styles.error} text`}>Projet non trouvé.</p>;
   }
 
   const handleBackClick = () => {
-    // 🔥 Récupère la position du scroll enregistrée
     const scrollPosition = sessionStorage.getItem("scrollPosition");
-
-    // 🔄 Retourne à la page principale
     router.push("/");
 
-    // 🔥 Une fois sur la page, on restaure le scroll
     setTimeout(() => {
       if (scrollPosition) {
         window.scrollTo({
@@ -41,14 +40,13 @@ export default function ProjectDetails() {
           behavior: "smooth",
         });
       }
-    }, 300); // Délai pour s'assurer que la page est bien chargée avant le scroll
+    }, 300);
   };
 
   return (
     <div className={styles.projectContainer}>
       <h1 className="title">{project.title}</h1>
 
-      {/* Swiper Carousel amélioré */}
       {project.images && project.images.length > 0 && (
         <Swiper
           className={styles.projectSwiper}
@@ -59,12 +57,11 @@ export default function ProjectDetails() {
         >
           {project.images.map((image, index) => (
             <SwiperSlide key={index} className={styles.swiperSlide}>
-              {/* ✅ Correction de l'erreur `layout="responsive"` */}
               <Image
                 src={image}
                 alt={`Illustration ${index + 1}`}
-                width={800} 
-                height={400} 
+                width={800}
+                height={400}
                 className={styles.projectImage}
                 priority
               />
@@ -86,7 +83,6 @@ export default function ProjectDetails() {
         )}
       </div>
 
-      {/* Liens vers les sites stylisés */}
       {project.links && project.links.length > 0 && (
         <div className={styles.linksContainer}>
           {project.links.map((link, index) => (
