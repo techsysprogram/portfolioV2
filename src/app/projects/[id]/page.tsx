@@ -120,7 +120,7 @@ export default function ProjectDetails() {
         </div>
       )}
 
-      <section>
+      <section className={styles.sectionBackButton}>
         <Button onClick={handleBackClick} variant="secondary">
           <ArrowLeft size={20} /> Revenir aux projets
         </Button>

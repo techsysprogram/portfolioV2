@@ -1,79 +1,82 @@
 [
   {
     "id": 1,
-    "title": "LIB - Logiciel de lotos associatifs",
-    "summary": "Application pour organiser des lotos associatifs, intégrée à Scanlib.",
-    "description": "LIB est une solution complète pour les associations souhaitant organiser des lotos en ligne. L'application gère la vente des cartons, les tirages et les annonces en direct.",
-    "links": [
-      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737737364/github-icon-1_ck6fli.svg",
-      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737737364/github-icon-1_ck6fli.svg"
-    ],
-    "linkNames": [
-      "Cartaloto",
-      "Scanlib"
+    "title": "Logiciel de gestion de jeux associatifs",
+    "summary": "Une solution complète pour la gestion et l’organisation d’événements ludiques en ligne.",
+    "description": [
+      "Développement d’une plateforme permettant la coordination et l’optimisation des activités liées aux jeux associatifs. L’accent a été mis sur l’accessibilité, la fluidité de l’expérience utilisateur et la gestion des interactions en temps réel.",
+      "Participation active à l’intégration du système avec d’autres plateformes et services, assurant une compatibilité optimale et une synchronisation efficace.",
+      "Mise en place de solutions techniques garantissant la pérennité, la sécurité des données et la scalabilité du projet afin de répondre aux besoins évolutifs des utilisateurs."
     ],
     "images": [
-      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737737364/github-icon-1_ck6fli.svg",
-      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737737364/github-icon-1_ck6fli.svg"
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737830793/windev_dev_hiedpv.webp"
     ]
   },
   {
     "id": 2,
     "title": "Portfolio - MERN",
-    "summary": "Mes compétences en développement web, intégrant des projets concrets et interactifs.",
+    "summary": "Un portfolio interactif mettant en avant mes compétences en développement web fullstack.",
     "description": [
-      "Ce portfolio met en avant mon expertise en développement fullstack avec la stack MERN (MongoDB, Express, React, Node.js).",
-      "J'y présente mes réalisations, dont des plateformes interactives",
-      "Chaque projet reflète mes compétences en intégration d'API, gestion d'authentification, optimisation des performances et responsive design.",
-      "Le portfolio adopte une interface moderne et réactive, avec un mode sombre intégré pour une expérience utilisateur optimale.",
-      "Développé avec React et CSS, il démontre mon savoir-faire en création d'interfaces fluides et accessibles.",
-      "Mon objectif est de proposer des solutions techniques performantes et adaptées aux besoins spécifiques des clients."
+      "Développé avec la stack MERN (MongoDB, Express, React, Node.js), ce portfolio présente mes réalisations à travers une interface moderne et réactive.",
+      "J’ai intégré un mode sombre, une navigation fluide et des animations dynamiques pour améliorer l’expérience utilisateur.",
+      "Ce projet illustre mes compétences en intégration d’API, gestion d’authentification, optimisation des performances et responsive design."
     ],
     "links": [
-      "https://conciergerie-occitanie.netlify.app/",
       "https://marvel-miguel.netlify.app/",
       "https://vinted-miguel.netlify.app/"
     ],
     "linkNames": [
-      "Livret d'accueil - Conciergerie Occitanie",
-      "Marvel Clone - Recherche de super-héros avec API Marvel",
+      "Marvel Clone - Recherche de super-héros",
       "Vinted Clone - Marketplace de seconde main"
     ],
     "images": [
       "https://res.cloudinary.com/dshznc4xx/image/upload/v1737735173/mern_i1ubic.png"
     ]
   },
-  
   {
     "id": 3,
-    "title": "Gestionnaire de tâches",
-    "summary": "Une application intuitive de gestion de tâches.",
-    "description": "Permet de créer, suivre et organiser ses tâches de manière efficace, avec rappels et intégration mobile.",
-    "links": [
-      "https://taskmanager.miguel-bellota.com"
-    ],
-    "linkNames": [
-      "Gestionnaire de tâches"
+    "title": "Logiciel de logiciel de gestion de stock industriel",
+    "summary": "Conception et développement d’un logiciel SaaS pour la gestion et l’optimisation des stocks de matériel industriel.",
+    "description": [
+      "Développement d'une solution sur mesure permettant la gestion efficace des stocks et des équipements industriels, avec un suivi précis des mouvements de matériel.",
+      "Mise en place d’un système SaaS accessible sur PC, offrant aux utilisateurs un accès centralisé aux données en temps réel, avec des fonctionnalités avancées de reporting et d’analyse.",
+      "Optimisation de la gestion des entrées et sorties de matériel, intégration de systèmes de traçabilité et automatisation des processus pour améliorer la productivité et réduire les erreurs.",
+      "Sécurisation et hébergement du logiciel dans un environnement cloud, garantissant une disponibilité élevée et une évolutivité adaptée aux besoins de l’entreprise."
     ],
     "images": [
-      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737737364/github-icon-1_ck6fli.svg",
-      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737737364/github-icon-1_ck6fli.svg"
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737831426/industriel_q9m2f1.webp"
     ]
   },
   {
     "id": 4,
     "title": "QuizTime",
-    "summary": "Une plateforme de quiz interactifs.",
-    "description": "Une solution e-learning permettant de créer et partager des quiz pour tester ses connaissances.",
-    "links": [
-      "https://quiztime.miguel-bellota.com"
+    "summary": "Une plateforme de jeux de questions A B C D",
+    "description": [
+      "J’ai développé le jeu QuizTime en 2022 en utilisant Arduino (C++) et WinDev (WLangage) pour concevoir un système de quiz interactif avec pupitres électroniques et boutons lumineux.",
+      "Mon rôle comprenait la programmation du jeu, la conception des circuits électroniques et l’installation sur site pour assurer son bon fonctionnement.",
+      "En 2024, j’ai modernisé le système en améliorant l’électronique et les performances logicielles pour optimiser la fiabilité du jeu.",
+      "Ce projet illustre ma capacité à concevoir des systèmes interactifs et à assurer leur évolution dans le temps."
     ],
-    "linkNames": [
-      "QuizTime"
+    "links": ["https://quiztime.miguel-bellota.com"],
+    "linkNames": ["QuizTime"],
+    "images": [
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737828733/quiztime2_kbxed6.jpg",
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737829811/quiztime3_sydvvt.webp"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Livret d'accueil numérique",
+    "summary": "Un outil digital facilitant l’accueil et l’information des voyageurs dans les hébergements touristiques.",
+    "description": [
+      "Développement d’une plateforme intuitive permettant aux propriétaires de gîtes et locations saisonnières de créer un livret d'accueil personnalisé et interactif.",
+      "Mise en place d’un système de gestion de contenu permettant d’ajouter des informations essentielles : règles du logement, recommandations locales, consignes d’utilisation des équipements, et contacts utiles.",
+      "Optimisation de l’accessibilité via une interface web ergonomique et responsive, garantissant une expérience fluide sur mobile, tablette et PC.",
+      "Intégration de fonctionnalités avancées telles que la traduction automatique, les QR codes pour un accès rapide et la gestion multi-propriétés."
     ],
     "images": [
-      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737737364/github-icon-1_ck6fli.svg",
-      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737737364/github-icon-1_ck6fli.svg"
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737832585/livret_boqb0i.png"
     ]
-  }
+}
+
 ]

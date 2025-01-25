@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTheme } from "@/context/ThemeProvider";
+import { useRouter, usePathname } from "next/navigation";
 import ThemeToggle from "@/components/ThemeToggle";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
@@ -11,6 +12,48 @@ import Image from "next/image";
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { isDarkMode } = useTheme();
+  const router = useRouter();
+  const pathname = usePathname();
+
+  // Fonction pour scroller jusqu'à la section "Projets" avec décalage
+  const handleScrollToProjects = (
+    event: React.MouseEvent<HTMLAnchorElement>
+  ) => {
+    event.preventDefault();
+    setIsMenuOpen(false);
+
+    if (pathname === "/") {
+      const projectsSection = document.getElementById("projects");
+      const navbar = document.querySelector(`.${styles.navbar}`);
+      if (projectsSection && navbar) {
+        const navbarHeight = navbar.clientHeight + 20;
+        window.scrollTo({
+          top: projectsSection.offsetTop - navbarHeight,
+          behavior: "smooth",
+        });
+      }
+    } else {
+      sessionStorage.setItem("scrollToProjects", "true");
+      router.push("/");
+    }
+  };
+
+  useEffect(() => {
+    if (sessionStorage.getItem("scrollToProjects") === "true") {
+      sessionStorage.removeItem("scrollToProjects");
+      setTimeout(() => {
+        const projectsSection = document.getElementById("projects");
+        const navbar = document.querySelector(`.${styles.navbar}`);
+        if (projectsSection && navbar) {
+          const navbarHeight = navbar.clientHeight + 20;
+          window.scrollTo({
+            top: projectsSection.offsetTop - navbarHeight,
+            behavior: "smooth",
+          });
+        }
+      }, 500);
+    }
+  }, []);
 
   return (
     <nav className={styles.navbar}>
@@ -24,17 +67,17 @@ export default function Navbar() {
         {/* Menu Desktop */}
         <div className={styles.menu}>
           <NavLink href="/">Accueil</NavLink>
-          <NavLink href="/projects">Projets</NavLink>
+          <NavLink href="/projects" onClick={handleScrollToProjects}>
+            Projets
+          </NavLink>
           <NavLink href="/testimonials">Avis</NavLink>
           <NavLink href="/posts">Posts</NavLink>
         </div>
         {/* Icônes des réseaux sociaux */}
         <div className={styles.socialLinks}>
-          <a
+          <NavLink
             href="https://www.linkedin.com/in/miguel-bellota-157144194/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.socialIcon}
+            external
           >
             <Image
               src="https://res.cloudinary.com/dshznc4xx/image/upload/v1737820820/linkedin-icon_eg9yom.svg"
@@ -42,13 +85,8 @@ export default function Navbar() {
               width={24}
               height={24}
             />
-          </a>
-          <a
-            href="https://github.com/techsysprogram"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`${styles.socialIcon} ${styles.githubIcon}`}
-          >
+          </NavLink>
+          <NavLink href="https://github.com/techsysprogram" external>
             <Image
               src="https://res.cloudinary.com/dshznc4xx/image/upload/v1737737364/github-icon-1_ck6fli.svg"
               alt="GitHub"
@@ -56,7 +94,7 @@ export default function Navbar() {
               height={24}
               style={{ filter: isDarkMode ? "invert(1)" : "none" }}
             />
-          </a>
+          </NavLink>
         </div>
         {/* Icône du menu mobile */}
         <div
@@ -78,7 +116,7 @@ export default function Navbar() {
         <NavLink href="/" onClick={() => setIsMenuOpen(false)}>
           Accueil
         </NavLink>
-        <NavLink href="/projects" onClick={() => setIsMenuOpen(false)}>
+        <NavLink href="/projects" onClick={handleScrollToProjects}>
           Projets
         </NavLink>
         <NavLink href="/testimonials" onClick={() => setIsMenuOpen(false)}>
@@ -92,16 +130,28 @@ export default function Navbar() {
   );
 }
 
+// 🔥 Composant NavLink amélioré pour gérer les liens internes et externes
 function NavLink({
   href,
   children,
   onClick,
+  external = false,
 }: {
   href: string;
   children: React.ReactNode;
   onClick?: () => void;
+  external?: boolean;
 }) {
-  return (
+  return external ? (
+    <a
+      href={href}
+      className={styles.navLink}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {children}
+    </a>
+  ) : (
     <Link href={href} className={styles.navLink} onClick={onClick}>
       {children}
     </Link>

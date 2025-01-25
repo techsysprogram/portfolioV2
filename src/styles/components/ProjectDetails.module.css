@@ -16,10 +16,11 @@
 }
 
 
-.projectContainer :last-child{
+.sectionBackButton{
   display: flex;
   justify-content: center;
   margin-bottom: 0px;
+  margin-top: 40px;
 }
 
 .projectSwiper {
@@ -62,7 +63,6 @@
   flex-direction: column;
   gap: 15px;
   margin-top: 20px;
-  margin-bottom: 40px;
 }
 
 .error {

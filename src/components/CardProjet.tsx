@@ -30,8 +30,10 @@ const CardProjet = ({ project }: { project: Project }) => {
         </div>
       )}
       <div className={styles.cardContent}>
-        <h3 className={styles.cardTitle}>{project.title}</h3>
-        <p className={styles.cardSummary}>{project.summary}</p>
+        <Link href={`/projects/${project.id}`} className={styles.cardLink}>
+          <h3 className={styles.cardTitle}>{project.title}</h3>
+          <p className={styles.cardSummary}>{project.summary}</p>
+        </Link>
       </div>
     </div>
   );
