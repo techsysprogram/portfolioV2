@@ -11,10 +11,11 @@ const nextConfig: NextConfig = {
   },
   images: {
     domains: [
-      "res.cloudinary.com", // 🔥 Autorise Cloudinary
-      "source.unsplash.com", // ✅ Autorise Unsplash
+      "res.cloudinary.com", // 🔥 Cloudinary
+      "source.unsplash.com", // 🔥 Unsplash
     ],
   },
+  output: "standalone", // ✅ Mode standalone pour les services comme Northflank
 };
 
 export default nextConfig;
