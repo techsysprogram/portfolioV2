@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, useParams } from "next/navigation";
 import projectsData from "@/data/projects.json";
 import styles from "@/styles/components/ProjectDetails.module.css";
 import "@/styles/text-styles.css"; // Ajout du fichier de styles global
@@ -12,9 +12,10 @@ import { Navigation, Pagination } from "swiper/modules";
 import Button from "@/components/ui/Button";
 import Image from "next/image";
 
-export default function ProjectDetails({ params }: { params: { id: string } }) {
+export default function ProjectDetails() {
   const router = useRouter();
-  const project = projectsData.find((p) => p.id.toString() === params.id);
+  const params = useParams(); // ✅ Récupération correcte des paramètres d'URL
+  const project = projectsData.find((p) => p.id.toString() === params?.id);
 
   // 🔥 Défilement automatique en haut au chargement de la page
   useEffect(() => {
@@ -58,13 +59,14 @@ export default function ProjectDetails({ params }: { params: { id: string } }) {
         >
           {project.images.map((image, index) => (
             <SwiperSlide key={index} className={styles.swiperSlide}>
+              {/* ✅ Correction de l'erreur `layout="responsive"` */}
               <Image
                 src={image}
                 alt={`Illustration ${index + 1}`}
-                width={800}
-                height={400}
-                layout="responsive"
+                width={800} 
+                height={400} 
                 className={styles.projectImage}
+                priority
               />
             </SwiperSlide>
           ))}
@@ -95,10 +97,7 @@ export default function ProjectDetails({ params }: { params: { id: string } }) {
               rel="noopener noreferrer"
               className="link"
             >
-              🔗{" "}
-              {project.linkNames && project.linkNames[index]
-                ? project.linkNames[index]
-                : `Voir le projet`}
+              🔗 {project.linkNames && project.linkNames[index] ? project.linkNames[index] : `Voir le projet`}
             </a>
           ))}
         </div>
