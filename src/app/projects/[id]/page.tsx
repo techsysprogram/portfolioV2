@@ -10,6 +10,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation, Pagination } from "swiper/modules";
 import Button from "@/components/ui/Button";
+import Image from "next/image";
 
 export default function ProjectDetails({ params }: { params: { id: string } }) {
   const router = useRouter();
@@ -57,9 +58,12 @@ export default function ProjectDetails({ params }: { params: { id: string } }) {
         >
           {project.images.map((image, index) => (
             <SwiperSlide key={index} className={styles.swiperSlide}>
-              <img
+              <Image
                 src={image}
                 alt={`Illustration ${index + 1}`}
+                width={800}
+                height={400}
+                layout="responsive"
                 className={styles.projectImage}
               />
             </SwiperSlide>

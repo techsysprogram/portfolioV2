@@ -1,6 +1,8 @@
-import Button from "./ui/Button";
-import styles from "@/styles/components/ui/Card.module.css";
+"use client";
+
+import styles from "@/styles/components/CardProjet.module.css";
 import Link from "next/link";
+import Image from "next/image"; // ✅ Import utilisé correctement
 
 interface Project {
   id: number | string;
@@ -14,13 +16,17 @@ interface Project {
 const CardProjet = ({ project }: { project: Project }) => {
   return (
     <div className={styles.card}>
-      <Link href={`/projects/${project.id}`} passHref>
+      <Link href={`/projects/${project.id}`} className={styles.cardLink}>
         {project.image && project.image.trim() !== "" && (
           <div className={styles.imageContainer}>
-            <img
+            {/* ✅ Utilisation correcte de `next/image` */}
+            <Image
               src={project.image}
               alt={project.title}
+              width={300} // Ajuste selon ton design
+              height={200} // Ajuste selon ton design
               className={styles.cardImage}
+              priority // Charge l’image en priorité
             />
           </div>
         )}
