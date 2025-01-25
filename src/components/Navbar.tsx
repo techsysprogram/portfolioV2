@@ -67,7 +67,8 @@ export default function Navbar() {
         {/* Menu Desktop */}
         <div className={styles.menu}>
           <NavLink href="/">Accueil</NavLink>
-          <NavLink href="/projects" onClick={handleScrollToProjects}>
+          <NavLink href="/projects" onClick={() => handleScrollToProjects}>
+
             Projets
           </NavLink>
           <NavLink href="/testimonials">Avis</NavLink>
@@ -116,7 +117,7 @@ export default function Navbar() {
         <NavLink href="/" onClick={() => setIsMenuOpen(false)}>
           Accueil
         </NavLink>
-        <NavLink href="/projects" onClick={handleScrollToProjects}>
+        <NavLink href="/projects" onClick={() => handleScrollToProjects}>
           Projets
         </NavLink>
         <NavLink href="/testimonials" onClick={() => setIsMenuOpen(false)}>
