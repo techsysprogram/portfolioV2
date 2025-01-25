@@ -16,36 +16,41 @@ import { Swiper as SwiperClass } from "swiper/types"; // ✅ Import du type corr
 
 export default function Projects() {
   const router = useRouter();
-  const [activeProjectIndex, setActiveProjectIndex] = useState(0);
-  const swiperRef = useRef<SwiperClass | null>(null); // ✅ Correction ici
+  const [activeProjectIndex, setActiveProjectIndex] = useState<number | null>(null);
+  const swiperRef = useRef<SwiperClass | null>(null);
 
   useEffect(() => {
     const lastViewedProjectId = sessionStorage.getItem("lastViewedProjectId");
+    const scrollPosition = sessionStorage.getItem("scrollPosition");
+
+    if (scrollPosition) {
+      window.scrollTo({ top: parseInt(scrollPosition, 10), behavior: "smooth" });
+      sessionStorage.removeItem("scrollPosition");
+    }
 
     if (lastViewedProjectId) {
-      const foundIndex = projectsData.findIndex((p) => p.id.toString() === lastViewedProjectId);
+      const foundIndex = projectsData.findIndex((p) => p.id === Number(lastViewedProjectId));
+      console.log("ID projet trouvé:", lastViewedProjectId, "Index:", foundIndex);
+
       if (foundIndex !== -1) {
         setActiveProjectIndex(foundIndex);
       }
       sessionStorage.removeItem("lastViewedProjectId");
     }
-
-    const scrollPosition = sessionStorage.getItem("scrollPosition");
-    if (scrollPosition) {
-      window.scrollTo({ top: parseInt(scrollPosition, 10), behavior: "smooth" });
-      sessionStorage.removeItem("scrollPosition");
-    }
   }, []);
 
   useEffect(() => {
-    if (swiperRef.current) {
-      swiperRef.current.slideTo(activeProjectIndex, 0); // ✅ Correction ici
+    if (swiperRef.current && activeProjectIndex !== null) {
+      setTimeout(() => {
+        console.log("Déplacement vers index:", activeProjectIndex);
+        swiperRef.current?.slideTo(activeProjectIndex, 0);
+      }, 300); // Attente pour éviter l'effet reset sur mobile
     }
   }, [activeProjectIndex]);
 
   const handleProjectClick = (projectId: number) => {
     sessionStorage.setItem("scrollPosition", window.scrollY.toString());
-    sessionStorage.setItem("lastViewedProjectId", projectId.toString()); // ✅ Sauvegarde du projet affiché
+    sessionStorage.setItem("lastViewedProjectId", projectId.toString());
     router.push(`/projects/${projectId}`);
   };
 
@@ -63,7 +68,7 @@ export default function Projects() {
         <Swiper
           ref={(node) => {
             if (node) swiperRef.current = node.swiper;
-          }} // ✅ Référence correcte à Swiper
+          }}
           className={styles.swiperWrapper}
           modules={[Navigation, Pagination]}
           navigation={{
@@ -76,6 +81,15 @@ export default function Projects() {
             640: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
+          }}
+          onSwiper={(swiper) => {
+            swiperRef.current = swiper;
+            if (activeProjectIndex !== null) {
+              console.log("Swiper prêt, déplacement vers:", activeProjectIndex);
+              setTimeout(() => {
+                swiper.slideTo(activeProjectIndex, 0);
+              }, 300); // Attente pour éviter un reset sur mobile
+            }
           }}
         >
           {projectsData.map((project) => (
