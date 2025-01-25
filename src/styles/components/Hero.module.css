@@ -53,6 +53,7 @@
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
+    text-align: center;
     gap: 20px;
     /* background-color: rgb(164, 200, 56); */
   }

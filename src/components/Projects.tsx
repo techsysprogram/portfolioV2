@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/navigation";
 import projectsData from "@/data/projects.json";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -14,6 +15,35 @@ import Card from "@/components/CardProjet";
 
 export default function Projects() {
   const router = useRouter();
+  const [activeProjectIndex, setActiveProjectIndex] = useState(0);
+  const swiperRef = useRef<any>(null); // 🔥 Référence pour Swiper
+
+  useEffect(() => {
+    // 🔥 Récupérer l'ID du dernier projet consulté
+    const lastViewedProjectId = sessionStorage.getItem("lastViewedProjectId");
+
+    if (lastViewedProjectId) {
+      const foundIndex = projectsData.findIndex((p) => p.id.toString() === lastViewedProjectId);
+      if (foundIndex !== -1) {
+        setActiveProjectIndex(foundIndex); // 🔥 Définit le projet actif
+      }
+      sessionStorage.removeItem("lastViewedProjectId"); // Nettoie après usage
+    }
+
+    // 🔥 Restaurer la position du scroll
+    const scrollPosition = sessionStorage.getItem("scrollPosition");
+    if (scrollPosition) {
+      window.scrollTo({ top: parseInt(scrollPosition, 10), behavior: "smooth" });
+      sessionStorage.removeItem("scrollPosition");
+    }
+  }, []);
+
+  useEffect(() => {
+    // 🔥 Une fois Swiper monté, on le déplace vers le bon projet
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideTo(activeProjectIndex, 0); // 🔥 Déplace le slider immédiatement
+    }
+  }, [activeProjectIndex]);
 
   const handleProjectClick = (projectId: number) => {
     sessionStorage.setItem("scrollPosition", window.scrollY.toString());
@@ -32,6 +62,7 @@ export default function Projects() {
 
         {/* Slider Swiper */}
         <Swiper
+          ref={swiperRef} // 🔥 Ajout de la référence Swiper
           className={styles.swiperWrapper}
           modules={[Navigation, Pagination]}
           navigation={{
@@ -48,11 +79,11 @@ export default function Projects() {
         >
           {projectsData.map((project) => (
             <SwiperSlide key={project.id} onClick={() => handleProjectClick(project.id)}>
-              <Card 
+              <Card
                 project={{
                   ...project,
-                  link: project.links?.[0] || "", // 🔥 Correction : Définit `link` comme le premier élément de `links`
-                }} 
+                  link: project.links?.[0] || "",
+                }}
               />
             </SwiperSlide>
           ))}

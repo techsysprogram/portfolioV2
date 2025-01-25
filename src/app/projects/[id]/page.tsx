@@ -43,6 +43,7 @@ export default function ProjectDetails() {
   }
 
   const handleBackClick = () => {
+    sessionStorage.setItem("lastViewedProjectId", projectId); // 🔥 Sauvegarde l'ID du projet affiché
     const scrollPosition = sessionStorage.getItem("scrollPosition");
     router.push("/");
     setTimeout(() => {
@@ -52,7 +53,7 @@ export default function ProjectDetails() {
           behavior: "smooth",
         });
       }
-    }, 300);
+    }, 100);
   };
 
   return (
