@@ -5,16 +5,16 @@
     "summary": "Application pour organiser des lotos associatifs, intégrée à Scanlib.",
     "description": "LIB est une solution complète pour les associations souhaitant organiser des lotos en ligne. L'application gère la vente des cartons, les tirages et les annonces en direct.",
     "links": [
-      "https://www.cartaloto.com",
-      "https://www.scanlib.com"
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737737364/github-icon-1_ck6fli.svg",
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737737364/github-icon-1_ck6fli.svg"
     ],
     "linkNames": [
       "Cartaloto",
       "Scanlib"
     ],
     "images": [
-      "https://source.unsplash.com/featured/?lottery",
-      "https://source.unsplash.com/featured/?gaming"
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737737364/github-icon-1_ck6fli.svg",
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737737364/github-icon-1_ck6fli.svg"
     ]
   },
   {
@@ -56,8 +56,8 @@
       "Gestionnaire de tâches"
     ],
     "images": [
-      "https://source.unsplash.com/featured/?tasks",
-      "https://source.unsplash.com/featured/?productivity"
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737737364/github-icon-1_ck6fli.svg",
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737737364/github-icon-1_ck6fli.svg"
     ]
   },
   {
@@ -72,8 +72,8 @@
       "QuizTime"
     ],
     "images": [
-      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737543867/conciergerie/67640726aae7bb2b806196e1/optImgs_678e25515752cc030184ead0/optId7_P1_img1.jpg",
-      "https://source.unsplash.com/featured/?quiz"
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737737364/github-icon-1_ck6fli.svg",
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737737364/github-icon-1_ck6fli.svg"
     ]
   }
 ]

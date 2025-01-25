@@ -1,7 +1,7 @@
 "use client"; // ✅ Ce fichier est un Client Component
 
 import { useEffect, useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation"; // ✅ Corrigé pour Next.js 15
+import { useRouter } from "next/navigation";
 import projectsData from "@/data/projects.json";
 import styles from "@/styles/components/ProjectDetails.module.css";
 import "@/styles/text-styles.css";
@@ -22,20 +22,19 @@ interface Project {
   images: string[];
 }
 
-export default function ProjectDetails() {
+// ✅ Correction : Ajout de `params` dans les props
+export default function ProjectDetails({ params }: { params: { id: string } }) {
   const router = useRouter();
-  const searchParams = useSearchParams(); // ✅ Utilisation correcte pour récupérer l'ID
-  const projectId = searchParams.get("id"); // ✅ Récupération de l'ID depuis l'URL
-
   const [project, setProject] = useState<Project | null>(null);
 
   useEffect(() => {
-    if (projectId) {
-      const foundProject = projectsData.find((p) => p.id.toString() === projectId) || null;
+    if (params?.id) {
+      const foundProject =
+        projectsData.find((p) => p.id.toString() === params.id) || null;
       setProject(foundProject);
     }
     window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [projectId]);
+  }, [params]);
 
   if (!project) {
     return <p className={`${styles.error} text`}>Projet non trouvé.</p>;
