@@ -23,7 +23,7 @@
 .subtitle {
   font-size: clamp(1rem, 3vw, 1.2rem);
   font-weight: bold;
-  color: var(--chart-3);
+  color: var(--primary-bold);
   margin-bottom: 15px;
 }
 

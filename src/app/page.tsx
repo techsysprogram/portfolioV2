@@ -6,6 +6,8 @@ import Projects from "@/components/Projects";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Skills from "@/components/Skills";
+import MonParcours from "@/components/MonParcours";
+
 
 export default function Home() {
   const { isDarkMode } = useTheme();
@@ -26,6 +28,7 @@ export default function Home() {
         <About />
         <Skills />
         <Projects/>
+        <MonParcours />
         <Contact />
       </div>
     </div>

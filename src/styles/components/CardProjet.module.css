@@ -52,15 +52,13 @@
   text-overflow: ellipsis; /* Ajoute "..." à la fin si le texte est trop long */
 
   /* Animation de changement de couleur */
-  animation: textColorAnimation 5s linear infinite;
+  animation: textColorAnimation 4s linear infinite;
 }
 
 /* Animation */
 @keyframes textColorAnimation {
   0% { color: #3b82f6; }  /* Bleu clair */
-  25% { color: #2563eb; } /* Bleu plus foncé */
   50% { color: #3e60bf; } /* Bleu profond */
-  75% { color: #4f46e5; } /* Bleu violet */
   100% { color: #3b82f6; } /* Retour à la couleur initiale */
 }
 
