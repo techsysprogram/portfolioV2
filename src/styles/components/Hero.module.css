@@ -40,6 +40,49 @@
   flex: 1; /* Prend tout l’espace disponible */
 }
 
+/* Animation des icônes flottantes */
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.floatingIcon {
+  position: absolute;
+  width: 70px; /* Taille des icônes */
+  height: 70px;
+  opacity: 0.9;
+  z-index: 0; /* ✅ Assure que les icônes sont derrière le texte */
+  animation: floating 4s ease-in-out infinite;
+}
+
+/* ✅ Position stratégique des icônes pour ne pas gêner le texte */
+.iconNext {
+  top: 10%;
+  left: 20%;
+  animation-delay: 0s;
+}
+
+.iconReact {
+  top: 30%;
+  right: 6%;
+  animation-delay: 0.7s;
+}
+
+.iconTS {
+  bottom: 10%;
+  right: 20%;
+  animation-delay: 1s;
+}
+
+
+
 /* 📱 Mode mobile : l’image au-dessus et le texte en dessous */
 @media (max-width: 768px) {
   .container {

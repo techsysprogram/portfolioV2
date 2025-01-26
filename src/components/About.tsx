@@ -22,8 +22,8 @@ export default function About() {
       </p>
 
       <p className="text">
-        Toujours en veille sur les dernières tendances, mon objectif est d’offrir des solutions digitales{" "}
-        <span className="highlight">adaptées et innovantes</span>.
+        Toujours en veille sur les dernières tendances, <span className="highlight">mon objectif est d’offrir des solutions digitales</span>{" "}
+        adaptées et innovantes.
       </p>
     </section>
   );
