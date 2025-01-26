@@ -1,5 +1,6 @@
 import styles from "@/styles/components/Contact.module.css";
 import Button from "@/components/ui/Button";
+import "@/styles/text-styles.css"; // Importe les styles globaux
 
 export default function Contact() {
   return (
