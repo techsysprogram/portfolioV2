@@ -9,7 +9,7 @@
   position: relative;
 
   /* ✅ Appliquer l'image de fond en se déformant selon le conteneur */
-  background: url("https://res.cloudinary.com/dshznc4xx/image/upload/v1737850263/fondpng2_rlzugn.png")
+  background: url("https://res.cloudinary.com/dshznc4xx/image/upload/v1737906301/Design_sans_titre_1_hwm96q.png")
     no-repeat center;
   background-size: 100% 100%; /* Étire l'image pour qu'elle prenne toute la place */
   background-position: center;
@@ -65,12 +65,12 @@
 /* ✅ Position stratégique des icônes pour ne pas gêner le texte */
 .iconNext {
   top: 10%;
-  left: 20%;
+  left: 22%;
   animation-delay: 0s;
 }
 
 .iconReact {
-  top: 30%;
+  top: 27%;
   right: 6%;
   animation-delay: 0.7s;
 }
@@ -89,7 +89,7 @@
     flex-direction: column;
     text-align: center;
     gap: 20px;
-    padding: 0px 40px;
+    padding: 0px 35px;
   }
 
   .hero {

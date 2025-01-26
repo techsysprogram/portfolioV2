@@ -30,7 +30,7 @@ export default function Hero() {
         <div className={styles.textContainer}>
           <h1 className="title color-white">Miguel Bellota</h1>
           <p className="text color-white">
-            Développeur Logiciel & Full Stack (React) | Passionné par l'innovation, j’aime explorer de nouvelles solutions et relever des défis techniques pour enrichir mes compétences.
+            Développeur Logiciel & Full Stack | Passionné par l'innovation, j’aime explorer de nouvelles solutions et relever des défis techniques pour enrichir mes compétences.
           </p>
         </div>
       </div>
