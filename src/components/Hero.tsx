@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <header className={styles.hero}>
       <div className={styles.container}>
-        {/* Image à gauche */}
+        {/* Image de profil */}
         <Image
           src="https://res.cloudinary.com/dshznc4xx/image/upload/v1737478718/MiguelPC_d1f2ux.jpg"
           alt="Miguel Bellota"
@@ -15,11 +15,11 @@ export default function Hero() {
           className={styles.image}
         />
 
-        {/* Texte à droite */}
+        {/* Texte */}
         <div className={styles.textContainer}>
           <h1 className="title color-white">Miguel Bellota</h1>
           <p className="text color-white">
-            Développeur Logiciel & Full Stack | Fondateur de Techsysprogram
+          Développeur Logiciel & Full Stack (React) | Transformer vos idées en solutions digitales.
           </p>
         </div>
       </div>

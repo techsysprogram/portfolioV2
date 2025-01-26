@@ -28,11 +28,14 @@
     "tools": [
       { "id": 18, "name": "Git & GitHub", "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737737364/github-icon-1_ck6fli.svg" },
       { "id": 19, "name": "Docker", "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737739134/docker_e3v0qv.svg" },
-      { "id": 20, "name": "Netlify & Vercel", "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737739132/netlify_hhywhh.svg" },
+      { "id": 20, "name": "Netlify", "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737854485/te%CC%81le%CC%81chargement_mkpqzl.webp" },
+      { "id": 31, "name": "Northflank", "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737854485/northflank-BODSHy5h_mvwlcm.jpg" },
       { "id": 21, "name": "Expo", "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737739130/expo-1_tjsh1y.svg" },
       { "id": 22, "name": "Arduino", "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737739131/arduino-1_nkm4o8.svg" },
       { "id": 23, "name": "OAuth & JWT", "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737740381/jwt-3_ghqqwx.svg" },
-      { "id": 27, "name": "WordPress", "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737741371/wordpress-icon-1_vynl7b.svg" }
+      { "id": 27, "name": "WordPress", "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737741371/wordpress-icon-1_vynl7b.svg" },
+      { "id": 32, "name": "Notion", "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737854485/notion-2_oxfqua.svg" },
+      { "id": 33, "name": "Postman", "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737854485/postman_sr9hpb.svg" }
     ]
   }
   

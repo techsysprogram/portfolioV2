@@ -26,6 +26,9 @@
   --chart-5: rgba(255, 165, 0, 1);
   --radius: 0.5rem;
 
+
+  --primary-bold: rgba(29, 78, 216, 1);
+
   --link-1: rgba(37, 99, 235, 1);
   --linkhover-1: rgba(29, 78, 216, 1);
 
@@ -60,6 +63,8 @@
   --chart-4: rgba(128, 0, 128, 1);
   --chart-5: rgba(255, 0, 0, 1);
 
+  --primary-bold: rgb(157, 178, 233);
+  
   --link-1: rgb(78, 129, 239);
   --linkhover-1: rgb(67, 110, 228);
 

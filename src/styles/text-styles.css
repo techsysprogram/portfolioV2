@@ -40,3 +40,37 @@
   color: var(--linkhover-1);
   transform: scale(1.05);
 }
+
+
+.intro-text {
+  max-width: 60rem; /* Adaptation de la largeur */
+  margin: 2rem auto;
+  padding: 1.5rem 0;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+  white-space: pre-line;
+  font-size: 1.125rem; /* Taille de base */
+  line-height: 1.6;
+  opacity: 1;
+}
+
+@media (min-width: 1024px) {
+  .intro-text {
+      font-size: 1.25rem; /* Plus grand sur écrans larges */
+  }
+}
+
+@media (min-width: 1536px) {
+  .intro-text {
+      font-size: 1.5rem;
+  }
+}
+
+.highlight {
+  font-weight: bold;
+  color: var(--primary-bold) /* Violet foncé (modifiable selon ton thème) */
+}
+
+.bold {
+  font-weight: bold;
+}

@@ -11,7 +11,7 @@ export default function Skills() {
       <h2 className="title">Mes Compétences</h2>
 
       {/* Section des Frameworks */}
-      <h3 className="subtitle">Frameworks & Librairies</h3>
+      <h3 className="highlight">Frameworks & Librairies</h3>
       <div className={styles.skillsGrid}>
         {skillsData.frameworks.map((skill) => (
           <div key={skill.id} className={styles.skillCard}>
@@ -28,7 +28,7 @@ export default function Skills() {
       </div>
 
       {/* Section des Langages */}
-      <h3 className="subtitle">Langages de Programmation</h3>
+      <h3 className="highlight">Langages de Programmation</h3>
       <div className={styles.skillsGrid}>
         {skillsData.languages.map((skill) => (
           <div key={skill.id} className={styles.skillCard}>
@@ -45,7 +45,7 @@ export default function Skills() {
       </div>
 
       {/* Section Backend */}
-      <h3 className="subtitle">Bases de Données & Backend</h3>
+      <h3 className="highlight">Bases de Données & Backend</h3>
       <div className={styles.skillsGrid}>
         {skillsData.backend.map((skill) => (
           <div key={skill.id} className={styles.skillCard}>
@@ -62,7 +62,7 @@ export default function Skills() {
       </div>
 
       {/* Section Outils & DevOps */}
-      <h3 className="subtitle">Outils & DevOps</h3>
+      <h3 className="highlight">Outils & DevOps</h3>
       <div className={styles.skillsGrid}>
         {skillsData.tools.map((skill) => (
           <div key={skill.id} className={styles.skillCard}>
