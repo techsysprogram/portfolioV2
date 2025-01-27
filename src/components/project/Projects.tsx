@@ -41,7 +41,8 @@ export default function Projects() {
     if (swiperRef.current && activeProjectIndex !== null) {
       setTimeout(() => {
         swiperRef.current?.slideTo(activeProjectIndex, 0);
-        updateNavState(swiperRef.current);
+        /* updateNavState(swiperRef.current); */
+        updateNavState();
       }, 300);
     }
   }, [activeProjectIndex]);
@@ -108,7 +109,7 @@ export default function Projects() {
               <Card
                 project={{
                   ...project,
-                  link: project.links?.[0] || "",
+                  link: project.links?.[0]?.url || "",
                 }}
               />
             </SwiperSlide>

@@ -41,7 +41,7 @@ export default function Posts() {
     if (swiperRef.current && activePostIndex !== null) {
       setTimeout(() => {
         swiperRef.current?.slideTo(activePostIndex, 0);
-        updateNavState(swiperRef.current);
+        updateNavState();
       }, 300);
     }
   }, [activePostIndex]);
