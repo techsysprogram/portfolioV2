@@ -64,14 +64,14 @@
 }
 
 /* Animation subtile de pulsation */
-@keyframes pulse-teal {
+/* @keyframes pulse-teal {
   0% {
     box-shadow: 0px 4px 10px rgba(14, 28, 175, 0.2);
   }
   100% {
     box-shadow: 0px 6px 14px rgba(25, 25, 208, 0.4);
   }
-}
+} */
 
 /* Logo */
 .logoContainer {

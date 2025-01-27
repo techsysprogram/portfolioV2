@@ -1,0 +1,96 @@
+[
+  {
+    "id": 1,
+    "title": "Pourquoi j'ai choisi Next.js, TypeScript et CSS pur pour mon portfolio",
+    "summary": "Mon approche technique pour concevoir un portfolio performant et maintenable.",
+    "content": [
+      "Créer un portfolio est essentiel pour un développeur afin de mettre en avant son expertise et ses réalisations.",
+      "J'ai choisi Next.js pour ses performances, sa facilité de gestion du routage et son rendu statique, ce qui améliore le SEO et la rapidité d'affichage.",
+      "L'utilisation de TypeScript m'a permis de renforcer la sécurité de mon code et d'éviter de nombreuses erreurs en bénéficiant d'un typage fort.",
+      "Contrairement à Tailwind CSS, j'ai préféré utiliser du CSS pur pour avoir un contrôle total sur le design et éviter une surcharge de classes utilitaires. J’aime pouvoir écrire mon CSS de manière plus structurée et modulaire, sans dépendre d’une bibliothèque externe qui pourrait impacter les performances et la lisibilité du code.",
+      "En termes de déploiement, j’ai fait le choix de Northflank plutôt que Vercel. Bien que Vercel soit l’option la plus populaire pour héberger des applications Next.js, Northflank me permet une meilleure gestion des ressources et un contrôle plus poussé sur les services que j’utilise. C'est un choix personnel basé sur ma volonté de diversifier les solutions techniques que j'explore.",
+      "Grâce à cette stack, mon portfolio est optimisé, fluide et facilement évolutif pour présenter mes projets et mon expérience."
+    ],
+    "images": [
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737998299/Copie_de_httpsres.cloudinary.comdshznc4xximageuploadv1737854485notion-2_oxfqua.svg_1_hbwu5x.png",
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737991144/Capture_d_e%CC%81cran_2025-01-27_a%CC%80_16.18.43_a35p31.png"
+    ],
+    "videos": [],
+    "links": [
+      {
+        "name": "Découvrir Next.js",
+        "url": "https://nextjs.org/"
+      },
+      {
+        "name": "Pourquoi utiliser TypeScript ?",
+        "url": "https://www.typescriptlang.org/"
+      },
+      {
+        "name": "Principes avancés du CSS pur",
+        "url": "https://developer.mozilla.org/fr/docs/Web/CSS"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Mon évolution technologique en tant que développeur indépendant",
+    "summary": "Comment j’ai évolué de WordPress et PHP vers Next.js et TypeScript pour des applications modernes et performantes.",
+    "content": [
+      "Depuis que je suis freelance, j’ai affiné ma stack technologique pour être plus productif et efficace.",
+      "Avant de découvrir Next.js et TypeScript, je travaillais principalement avec WordPress et PHP pour créer des sites web. Ces technologies m’ont permis d'acquérir une bonne compréhension du développement web, mais j’avais besoin d’une approche plus moderne et optimisée.",
+      "Pour les logiciels métiers, j’ai longtemps utilisé WinDev, un outil puissant pour le développement d’applications d'entreprise. Cependant, avec l'évolution du marché, j’ai voulu me diversifier et apprendre de nouvelles technologies plus flexibles.",
+      "Je commence à peine avec Next.js, mais j’apprécie déjà ses performances et sa structure optimisée. Associé à TypeScript, il m’aide à écrire du code plus clair et maintenable."
+    ],
+    "images": [
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737995872/Capture_d_e%CC%81cran_2025-01-27_a%CC%80_17.37.37_g1pp2t.png"
+    ],
+    "videos": [],
+    "links": [
+      {
+        "name": "Apprendre Next.js avec TypeScript",
+        "url": "https://nextjs.org/docs"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "De l'industrie à la tech : Mon passage du CDI au freelancing",
+    "summary": "Comment j'ai quitté un poste stable en industrie pour devenir développeur indépendant.",
+    "content": [
+      "Avant de me lancer pleinement en freelance, j’ai travaillé plus de 7 ans en tant que technicien en automatisation dans la maintenance industrielle. J’aimais mon travail et j’avais acquis une solide expérience dans l’optimisation et la maintenance des machines, en améliorant leur interface utilisateur et leur sécurité.",
+      "Mais au fil du temps, l’envie de découvrir autre chose et de me challenger dans un domaine plus proche de la programmation s’est faite ressentir. Je ne voulais pas prendre de risques inconsidérés, alors j’ai commencé à me former et à proposer mes services en développement logiciel en parallèle de mon CDI, comme une activité complémentaire.",
+      "C’était une manière de tester ce nouveau domaine tout en gardant une certaine stabilité financière.",
+      "Début 2020, j’ai décroché mon premier client. À l'époque, j’étais tellement motivé par cette opportunité que j’ai largement sous-facturé mon travail, sans vraiment prendre en compte le temps réel investi.",
+      "J'ai travaillé des heures interminables sur ce projet, rendant mes prestations peu rentables. Avec du recul, je ne suis pas forcément fier du code que j’ai produit à l'époque : peu structuré, sans bonnes pratiques et parfois inefficace.",
+      "Mais c’était le début, et chaque projet apporte son lot d’apprentissage. Cette première expérience m’a appris à mieux estimer mes prestations, à structurer mon travail et surtout à adopter des méthodologies plus professionnelles.",
+      "Vers 2022, j’ai voulu faire évoluer mon activité vers le développement web, en me formant en autodidacte pour répondre à la demande croissante en applications web modernes.",
+      "Aujourd’hui, je conçois des solutions sur mesure pour des entreprises locales et des startups, en combinant mes compétences en logiciels métiers et en développement web."
+    ],
+    "images": [
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737999143/bouteil_bvbkoe.webp"
+    ],
+    "videos": [],
+    "links": [
+      {
+        "name": "Me contacter sur LinkedIn",
+        "url": "https://www.linkedin.com/in/miguel-bellota-157144194/"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Mes outils essentiels pour optimiser mon travail de développeur indépendant",
+    "summary": "Les logiciels et services que j’utilise au quotidien pour gagner en productivité et organisation.",
+    "content": [
+      "Visual Studio Code est mon éditeur de choix pour sa rapidité et son écosystème d'extensions comme Prettier et ESLint.",
+      "Postman est un outil indispensable pour la gestion des API. Il me permet de tester, documenter et automatiser les appels API, facilitant ainsi le développement et l'intégration des services back-end.",
+      "Enfin, GitHub est indispensable pour la gestion de versions et le travail en collaboration.",
+      "Un autre outil qui a transformé ma façon de travailler est Notion. Avant, je notais mes idées un peu partout, entre fichiers texte, post-it et Google Docs, ce qui rendait la gestion des informations chaotique. Aujourd’hui, j’utilise Notion pour centraliser tous mes projets, suivre mes tâches et organiser mes apprentissages en développement. Cela m’aide à être plus structuré et à gagner en efficacité."
+    ],
+    "images": [
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737996718/httpsres.cloudinary.comdshznc4xximageuploadv1737854485notion-2_oxfqua.svg_arlldz.png"
+    ],
+    "videos": [],
+    "links": []
+  }
+]

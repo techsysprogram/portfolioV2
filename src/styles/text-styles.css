@@ -21,24 +21,23 @@
 }
 
 .subtitle {
-  font-size: clamp(1rem, 3vw, 1.1rem);
+  font-size: clamp(0.9rem, 3vw, 1.1rem);
   font-weight: bold;
   color: var(--primary-bold);
   margin-bottom: 15px;
 }
 
 .description {
-  font-size: clamp(0.9rem, 3vw, 1.1rem);
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
   color: var(--foreground);
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;
-  /* text-align: justify; */
 }
 
 /* 🔗 Styles des liens vers les projets */
 .link {
-  font-size: clamp(0.8rem, 3vw, 1rem);
+  font-size: clamp(0.8rem, 2vw, 1rem);
   font-weight: bold;
   color: var(--link-1);
   text-decoration: none;

@@ -4,65 +4,66 @@
     "title": "Logiciel de gestion de jeux associatifs",
     "summary": "Une solution complète pour la gestion et l’organisation d’événements ludiques en ligne.",
     "description": [
-      "Développement d’une plateforme permettant la coordination et l’optimisation des activités liées aux jeux associatifs. L’accent a été mis sur l’accessibilité, la fluidité de l’expérience utilisateur et la gestion des interactions en temps réel.",
-      "Participation active à l’intégration du système avec d’autres plateformes et services, assurant une compatibilité optimale et une synchronisation efficace.",
-      "Mise en place de solutions techniques garantissant la pérennité, la sécurité des données et la scalabilité du projet afin de répondre aux besoins évolutifs des utilisateurs."
+      "En tant que développeur et chef de projet, j’ai conçu et optimisé un logiciel de gestion dédié aux jeux associatifs. Mon rôle ne s’est pas limité au développement technique : j’ai également assuré la gestion des serveurs, la sécurisation des données et la mise en place des échanges avec les clients et les utilisateurs finaux.",
+      "J’ai dirigé l’intégration du logiciel avec le site web, garantissant une synchronisation fluide et une expérience utilisateur optimale. Cette intégration a permis d’assurer une interopérabilité efficace avec d’autres plateformes et services tiers.",
+      "En tant que responsable du projet, j’ai supervisé chaque étape du développement, du concept initial à la mise en production, en passant par les mises à jour et les améliorations continues, afin de garantir la pérennité et l’évolutivité du système.",
+      "Grâce à une vision globale et une expertise technique approfondie, j’ai mis en place des solutions assurant la performance, la fiabilité et la scalabilité du projet."
     ],
     "links": [],
-    "linkNames": [],
     "images": [
-      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737830793/windev_dev_hiedpv.webp"
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737998820/loto_jcxrzc.webp"
     ]
   },
   {
     "id": 2,
-    "title": "Portfolio - MERN",
-    "summary": "Un portfolio interactif mettant en avant mes compétences en développement web fullstack.",
+    "title": "Marvel Clone",
+    "summary": "Une application web permettant d’explorer l’univers Marvel à travers une interface fluide et intuitive.",
     "description": [
-      "Développé avec la stack MERN (MongoDB, Express, React, Node.js), ce portfolio présente mes réalisations à travers une interface moderne et réactive.",
-      "J’ai intégré un mode sombre, une navigation fluide et des animations dynamiques pour améliorer l’expérience utilisateur.",
-      "Ce projet illustre mes compétences en intégration d’API, gestion d’authentification, optimisation des performances et responsive design."
+      "Développée avec la stack MERN (MongoDB, Express, React, Node.js), cette application permet aux utilisateurs de rechercher des personnages, comics et séries issus de l’univers Marvel grâce à l’API Marvel.",
+      "J’ai intégré un système d’authentification, une gestion avancée des favoris pour offrir une expérience personnalisée.",
+      "Ce projet met en avant mes compétences en intégration d’API, gestion d’état avec React, optimisation des performances et design responsive."
     ],
     "links": [
-      "https://marvel-miguel.netlify.app/",
-      "https://vinted-miguel.netlify.app/"
-    ],
-    "linkNames": [
-      "Marvel Clone - Recherche de super-héros",
-      "Vinted Clone - Marketplace de seconde main"
+      {
+        "name": "Marvel Clone - Recherche de super-héros",
+        "url": "https://marvel-miguel.netlify.app/"
+      }
     ],
     "images": [
-      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737735173/mern_i1ubic.png"
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737988714/Capture_d_e%CC%81cran_2025-01-27_a%CC%80_15.38.02_odllgm.png"
     ]
   },
   {
     "id": 3,
-    "title": "Logiciel de logiciel de gestion de stock industriel",
-    "summary": "Conception et développement d’un logiciel SaaS pour la gestion et l’optimisation des stocks de matériel industriel.",
+    "title": "Vinted Clone",
+    "summary": "Une plateforme d’achat et de vente de vêtements d’occasion inspirée du site Vinted.",
     "description": [
-      "Développement d'une solution sur mesure permettant la gestion efficace des stocks et des équipements industriels, avec un suivi précis des mouvements de matériel.",
-      "Mise en place d’un système SaaS accessible sur PC, offrant aux utilisateurs un accès centralisé aux données en temps réel, avec des fonctionnalités avancées de reporting et d’analyse.",
-      "Optimisation de la gestion des entrées et sorties de matériel, intégration de systèmes de traçabilité et automatisation des processus pour améliorer la productivité et réduire les erreurs.",
-      "Sécurisation et hébergement du logiciel dans un environnement cloud, garantissant une disponibilité élevée et une évolutivité adaptée aux besoins de l’entreprise."
+      "Ce projet fullstack a été développé avec la stack MERN (MongoDB, Express, React, Node.js) pour reproduire les fonctionnalités principales de Vinted.",
+      "Les utilisateurs peuvent créer un compte, publier des annonces avec images, filtrer les produits par prix et catégories, et simuler un paiement avec Stripe.",
+      "J’ai porté une attention particulière à l’ergonomie et à la fluidité de navigation, tout en optimisant l’affichage pour une expérience optimale sur desktop uniquement."
     ],
-    "links": [],
-    "linkNames": [],
+    "links": [
+      {
+        "name": "Vinted Clone - Site de revente d’articles",
+        "url": "https://vinted-miguel.netlify.app/"
+      }
+    ],
     "images": [
-      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737831426/industriel_q9m2f1.webp"
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737989139/Capture_d_e%CC%81cran_2025-01-27_a%CC%80_15.45.26_aqshct.png"
     ]
   },
   {
     "id": 4,
     "title": "QuizTime",
-    "summary": "Une plateforme de jeux de questions A B C D",
+    "summary": "Une plateforme de quiz interactif combinant électronique et programmation, conçue pour des compétitions dynamiques.",
     "description": [
       "J’ai développé le jeu QuizTime en 2022 en utilisant Arduino (C++) et WinDev (WLangage) pour concevoir un système de quiz interactif avec pupitres électroniques et boutons lumineux.",
-      "Mon rôle comprenait la programmation du jeu, la conception des circuits électroniques et l’installation sur site pour assurer son bon fonctionnement.",
-      "En 2024, j’ai modernisé le système en améliorant l’électronique et les performances logicielles pour optimiser la fiabilité du jeu.",
-      "Ce projet illustre ma capacité à concevoir des systèmes interactifs et à assurer leur évolution dans le temps."
+      "L’Arduino, programmé en C++, gère toute la partie électronique, incluant la gestion des boutons, l’éclairage des pupitres et la transmission des réponses.",
+      "L’ensemble du système est centralisé sur un seul PC, qui contrôle le jeu et affiche les questions et scores sur les écrans des pupitres.",
+      "La communication entre l’Arduino et le PC s’effectue via une connexion Ethernet, assurant une transmission rapide et fiable des données.",
+      "Ce projet illustre ma capacité à concevoir des systèmes interactifs en intégrant programmation, électronique et connectivité réseau."
     ],
     "links": [],
-    "linkNames": [],
     "images": [
       "https://res.cloudinary.com/dshznc4xx/image/upload/v1737828733/quiztime2_kbxed6.jpg",
       "https://res.cloudinary.com/dshznc4xx/image/upload/v1737829811/quiztime3_sydvvt.webp"
@@ -76,13 +77,12 @@
       "Développement d’une plateforme intuitive permettant aux propriétaires de gîtes et locations saisonnières de créer un livret d'accueil personnalisé et interactif.",
       "Mise en place d’un système de gestion de contenu permettant d’ajouter des informations essentielles : règles du logement, recommandations locales, consignes d’utilisation des équipements, et contacts utiles.",
       "Optimisation de l’accessibilité via une interface web ergonomique et responsive, garantissant une expérience fluide sur mobile, tablette et PC.",
-      "Intégration de fonctionnalités avancées telles que la traduction automatique, les QR codes pour un accès rapide et la gestion multi-propriétés."
+      "Intégration de fonctionnalités avancées telles que la traduction automatique, les QR codes pour un accès rapide."
     ],
     "links": [],
-    "linkNames": [],
     "images": [
-      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737833796/livret_lehxeq.png"
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737990541/Capture_d_e%CC%81cran_2025-01-27_a%CC%80_16.08.44_hqz7bb.png",
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737990541/Capture_d_e%CC%81cran_2025-01-27_a%CC%80_15.59.31_kgttvq.png"
     ]
-}
-
+  }
 ]

@@ -1,0 +1,84 @@
+.card {
+  background: var(--muted); /* Utilise la couleur de fond définie */
+  color: var(--foreground);
+  padding: 22px;
+  border-radius: 30px; /* Coins arrondis */
+  box-shadow: 0px 6px 1px rgba(0, 0, 0, 0.15); /* Ombre douce */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Bordure légère */
+  backdrop-filter: blur(5px); /* Effet de flou subtil */
+  margin-bottom: 20px;
+  min-height: 150px; /* Assure une taille minimale */
+
+  box-shadow: 0px 4px 10px rgba(167, 199, 231, 0.3);
+  background: linear-gradient(
+    to bottom,
+    rgba(143, 183, 222, 0.3),
+    rgba(191, 215, 237, 0.15)
+  );
+  backdrop-filter: blur(5px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: pulse-lightblue 2s infinite alternate;
+}
+
+/* Animation subtile de pulsation */
+@keyframes pulse-lightblue {
+  0% {
+    box-shadow: 0px 4px 10px rgba(167, 199, 231, 0.2);
+  }
+  100% {
+    box-shadow: 0px 6px 14px rgba(143, 183, 222, 0.4);
+  }
+}
+
+.cardTitle {
+  font-size: clamp(0.9rem, 3vw, 1.1rem);
+  font-weight: bold;
+  color: var(--primary-bold);
+  margin-bottom: 20px;
+
+  white-space: nowrap; /* Empêche le texte de passer à la ligne suivante */
+  overflow: hidden; /* Cache le texte qui dépasse */
+  text-overflow: ellipsis; /* Ajoute "..." à la fin si le texte est trop long */
+}
+
+/* Effet au survol */
+.card:hover {
+  transform: translateY(-8px); /* Légère élévation au survol */
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card div {
+}
+
+.imageContainer {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardContent {
+  padding: 0px 15px;
+}
+
+.cardSummary {
+  font-size: clamp(0.9rem, 3vw, 1rem);
+  color: var(--foreground);
+
+  height: 60px; /* Ajuste en fonction de la hauteur de ligne */
+  line-height: 1.2em; /* Hauteur d'une ligne */
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limite à 3 lignes */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

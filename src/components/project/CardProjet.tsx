@@ -1,4 +1,4 @@
-import styles from "@/styles/components/CardProjet.module.css";
+import styles from "@/styles/components/project/CardProjet.module.css";
 import Link from "next/link";
 import Image from "next/image";
 

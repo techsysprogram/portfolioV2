@@ -1,9 +1,9 @@
-"use client"; // ✅ Ce fichier est un Client Component
+"use client";
 
 import { useEffect, useState } from "react";
-import { useParams, useRouter } from "next/navigation"; // ✅ Utilisation correcte pour Next.js 15
+import { useParams, useRouter } from "next/navigation";
 import projectsData from "@/data/projects.json";
-import styles from "@/styles/components/ProjectDetails.module.css";
+import styles from "@/styles/components/project/ProjectDetails.module.css";
 import "@/styles/text-styles.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -11,15 +11,14 @@ import "swiper/css/navigation";
 import { Navigation, Pagination } from "swiper/modules";
 import Button from "@/components/ui/Button";
 import Image from "next/image";
-import { ArrowLeft } from "lucide-react"; // ✅ Import de l'icône
+import { ArrowLeft } from "lucide-react";
 
 interface Project {
   id: number | string;
   title: string;
   summary: string;
   description: string | string[];
-  links: string[];
-  linkNames: string[];
+  links: { name: string; url: string }[]; // ✅ Nouveau format des liens
   images: string[];
 }
 
@@ -31,8 +30,7 @@ export default function ProjectDetails() {
 
   useEffect(() => {
     if (projectId) {
-      const foundProject =
-        projectsData.find((p) => p.id.toString() === projectId) || null;
+      const foundProject = projectsData.find((p) => p.id.toString() === projectId) || null;
       setProject(foundProject);
     }
 
@@ -103,18 +101,13 @@ export default function ProjectDetails() {
         )}
       </div>
 
-      {/* Liens */}
+      {/* ✅ Affichage des liens */}
       {project.links && project.links.length > 0 && (
         <div className={styles.linksContainer}>
+          <h2 className="subtitle">Liens du projet</h2>
           {project.links.map((link, index) => (
-            <a
-              key={index}
-              href={link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link"
-            >
-              🔗 {project.linkNames?.[index] ?? `Voir le projet`}
+            <a key={index} href={link.url} target="_blank" rel="noopener noreferrer" className="link">
+              🔗 {link.name}
             </a>
           ))}
         </div>

@@ -8,13 +8,15 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import styles from "@/styles/components/Projects.module.css";
+import styles from "@/styles/components/project/Projects.module.css";
 import "@/styles/text-styles.css";
-import Card from "@/components/CardProjet";
-import { Swiper as SwiperClass } from "swiper/types"; // ✅ Import du type correct
+import Card from "@/components/project/CardProjet";
+import { Swiper as SwiperClass } from "swiper/types";
 
 export default function Projects() {
   const [activeProjectIndex, setActiveProjectIndex] = useState<number | null>(null);
+  const [isBeginning, setIsBeginning] = useState(true);
+  const [isEnd, setIsEnd] = useState(false);
   const swiperRef = useRef<SwiperClass | null>(null);
 
   useEffect(() => {
@@ -28,8 +30,6 @@ export default function Projects() {
 
     if (lastViewedProjectId) {
       const foundIndex = projectsData.findIndex((p) => p.id === Number(lastViewedProjectId));
-      console.log("ID projet trouvé:", lastViewedProjectId, "Index:", foundIndex);
-
       if (foundIndex !== -1) {
         setActiveProjectIndex(foundIndex);
       }
@@ -40,11 +40,32 @@ export default function Projects() {
   useEffect(() => {
     if (swiperRef.current && activeProjectIndex !== null) {
       setTimeout(() => {
-        console.log("Déplacement vers index:", activeProjectIndex);
         swiperRef.current?.slideTo(activeProjectIndex, 0);
-      }, 300); // Attente pour éviter l'effet reset sur mobile
+        updateNavState(swiperRef.current);
+      }, 300);
     }
   }, [activeProjectIndex]);
+
+  const updateNavState = () => {
+    if (swiperRef.current) {
+      setIsBeginning(swiperRef.current.isBeginning);
+      setIsEnd(swiperRef.current.isEnd);
+    }
+  };
+
+  const handlePrevClick = () => {
+    if (swiperRef.current && !isBeginning) {
+      swiperRef.current.slidePrev();
+      setTimeout(updateNavState, 100);
+    }
+  };
+
+  const handleNextClick = () => {
+    if (swiperRef.current && !isEnd) {
+      swiperRef.current.slideNext();
+      setTimeout(updateNavState, 100);
+    }
+  };
 
   const handleProjectClick = (projectId: number) => {
     sessionStorage.setItem("scrollPosition", window.scrollY.toString());
@@ -56,22 +77,19 @@ export default function Projects() {
       <h2 className="title">Projets récents</h2>
 
       <div className={styles.sliderContainer}>
-        {/* Flèche gauche */}
-        <button className={`${styles.arrowButton} swiper-button-prev`}>
-          <ChevronLeft className={styles.arrowIcon} />
-        </button>
+        {!isBeginning && (
+          <button className={`${styles.arrowButton} ${styles.projectsPrev}`} onClick={handlePrevClick}>
+            <ChevronLeft className={styles.arrowIcon} />
+          </button>
+        )}
 
-        {/* Slider Swiper */}
         <Swiper
           ref={(node) => {
             if (node) swiperRef.current = node.swiper;
           }}
           className={styles.swiperWrapper}
           modules={[Navigation, Pagination]}
-          navigation={{
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          }}
+          navigation={false}
           pagination={{ clickable: true }}
           spaceBetween={20}
           breakpoints={{
@@ -79,14 +97,10 @@ export default function Projects() {
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
           }}
+          onSlideChange={updateNavState}
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
-            if (activeProjectIndex !== null) {
-              console.log("Swiper prêt, déplacement vers:", activeProjectIndex);
-              setTimeout(() => {
-                swiper.slideTo(activeProjectIndex, 0);
-              }, 300); // Attente pour éviter un reset sur mobile
-            }
+            updateNavState();
           }}
         >
           {projectsData.map((project) => (
@@ -101,10 +115,11 @@ export default function Projects() {
           ))}
         </Swiper>
 
-        {/* Flèche droite */}
-        <button className={`${styles.arrowButton} swiper-button-next`}>
-          <ChevronRight className={styles.arrowIcon} />
-        </button>
+        {!isEnd && (
+          <button className={`${styles.arrowButton} ${styles.projectsNext}`} onClick={handleNextClick}>
+            <ChevronRight className={styles.arrowIcon} />
+          </button>
+        )}
       </div>
     </section>
   );

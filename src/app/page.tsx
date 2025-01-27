@@ -2,11 +2,12 @@
 import { useEffect } from "react"; // Ajoute l'import de useEffect
 import { useTheme } from "@/context/ThemeProvider";
 import Hero from "@/components/Hero";
-import Projects from "@/components/Projects";
+import Projects from "@/components/project/Projects";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Skills from "@/components/Skills";
 import MonParcours from "@/components/MonParcours";
+import Posts from "@/components/post/Posts";
 
 
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
       <div className="main-global">
         <Hero />
         <About />
+        <Posts />
         <Skills />
         <Projects/>
         <MonParcours />

@@ -1,0 +1,92 @@
+.projects {
+  text-align: center;
+}
+
+.sliderContainer {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.swiperWrapper {
+  padding: 15px;
+}
+
+/* ✅ Flèches visibles uniquement si nécessaire */
+.arrowButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  cursor: pointer;
+  color: white;
+  opacity: 0.8;
+  transition: opacity 0.3s, transform 0.2s;
+  padding: 15px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrowButton:hover {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.2);
+}
+
+/* ✅ Icônes plus grandes */
+.arrowIcon {
+  width: 32px;
+  height: 32px;
+}
+
+/* ✅ Positionnement optimisé */
+.projectsPrev {
+  left: -30px;
+}
+
+.projectsNext {
+  right: -30px;
+}
+
+/* ✅ Ajustement pour tablette et mobile */
+@media screen and (max-width: 1024px) {
+  .arrowButton {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
+
+  .arrowIcon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .projectsPrev {
+    left: 5px;
+  }
+
+  .projectsNext {
+    right: 5px;
+  }
+}
+
+/* ✅ Cacher les flèches si une seule slide */
+@media screen and (max-width: 768px) {
+  .arrowButton {
+    width: 35px;
+    height: 35px;
+  }
+
+  .projectsPrev {
+    left: 5px;
+  }
+
+  .projectsNext {
+    right: 5px;
+  }
+}

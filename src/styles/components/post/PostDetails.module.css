@@ -1,0 +1,79 @@
+.postContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 20px 40px 20px;
+  text-align: center;
+  background: var(--primary-foreground);
+  border-radius: 12px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.postContainer > section { /* pour le premier bouton retour */
+  margin-bottom: 20px;
+}
+
+.postImage {
+  width: 100%;
+  height: auto;
+  max-height: 460px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out;
+
+  margin-bottom: 20px;
+}
+
+.videoContainer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.video {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.linksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.error {
+  text-align: center;
+  /* font-size: 1.5rem; */
+  color: red;
+}
+
+/* ✅ Harmonisation avec ProjectDetails.module.css */
+.sectionBackButton {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+  margin-top: 40px;
+}
+
+.postSwiper {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.swiperSlide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.postImage {
+  width: 100%;
+  height: auto;
+  max-height: 460px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out;
+}

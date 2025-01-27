@@ -13,7 +13,7 @@ export default function About() {
       </p>
       <p className="text">
         Autodidacte, J'ai transformé{" "}
-        <span className="highlight">ma passion en métier il y a 6 ans</span>.
+        <span className="highlight">ma passion en métier il y a 5 ans</span>.
         J’ai affûté mes compétences en explorant diverses technologies et en
         suivant des formations, notamment chez{" "}
         <span className="highlight">Noa Forma</span>,{" "}

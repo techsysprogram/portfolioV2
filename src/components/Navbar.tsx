@@ -15,8 +15,33 @@ export default function Navbar() {
   const router = useRouter();
   const pathname = usePathname();
 
+  // ✅ Fonction pour scroller jusqu'à la section "Posts" avec un décalage
+  const handleScrollToPosts = (event?: React.MouseEvent<HTMLAnchorElement>) => {
+    if (event) event.preventDefault();
+    setIsMenuOpen(false);
+
+    if (pathname === "/") {
+      const postsSection = document.getElementById("posts");
+      const navbar = document.querySelector(`.${styles.navbar}`);
+
+      if (postsSection && navbar) {
+        const navbarHeight = navbar.clientHeight + 20;
+        window.scrollTo({
+          top: postsSection.offsetTop - navbarHeight,
+          behavior: "smooth",
+        });
+      }
+    } else {
+      // Stocker dans sessionStorage pour scroller après le changement de page
+      sessionStorage.setItem("scrollToPosts", "true");
+      router.push("/");
+    }
+  };
+
   // ✅ Fonction pour scroller jusqu'à la section "Projets" avec un décalage
-  const handleScrollToProjects = (event?: React.MouseEvent<HTMLAnchorElement>) => {
+  const handleScrollToProjects = (
+    event?: React.MouseEvent<HTMLAnchorElement>
+  ) => {
     if (event) event.preventDefault();
     setIsMenuOpen(false);
 
@@ -52,7 +77,22 @@ export default function Navbar() {
             behavior: "smooth",
           });
         }
-      }, 500); // Attendre un peu que la page charge avant de scroller
+      }, 500);
+    }
+
+    if (sessionStorage.getItem("scrollToPosts") === "true") {
+      sessionStorage.removeItem("scrollToPosts");
+      setTimeout(() => {
+        const postsSection = document.getElementById("posts");
+        const navbar = document.querySelector(`.${styles.navbar}`);
+        if (postsSection && navbar) {
+          const navbarHeight = navbar.clientHeight + 20;
+          window.scrollTo({
+            top: postsSection.offsetTop - navbarHeight,
+            behavior: "smooth",
+          });
+        }
+      }, 500);
     }
   }, []);
 
@@ -68,11 +108,14 @@ export default function Navbar() {
         {/* Menu Desktop */}
         <div className={styles.menu}>
           <NavLink href="/">Accueil</NavLink>
+          <NavLink href="/" onClick={handleScrollToPosts}>
+            Posts
+          </NavLink>
+
           <NavLink href="/" onClick={handleScrollToProjects}>
             Projets
           </NavLink>
-          <NavLink href="/testimonials">Avis</NavLink>
-          <NavLink href="/posts">Posts</NavLink>
+          {/* <NavLink href="/testimonials">Avis</NavLink> */}
         </div>
         {/* Icônes des réseaux sociaux */}
         <div className={styles.socialLinks}>
@@ -111,19 +154,21 @@ export default function Navbar() {
       </div>
 
       {/* Menu Mobile Déroulant */}
-      <div className={`${styles.mobileMenu} ${isMenuOpen ? styles.active : ""}`}>
+      <div
+        className={`${styles.mobileMenu} ${isMenuOpen ? styles.active : ""}`}
+      >
         <NavLink href="/" onClick={() => setIsMenuOpen(false)}>
           Accueil
+        </NavLink>
+        <NavLink href="/" onClick={handleScrollToPosts}>
+          Posts
         </NavLink>
         <NavLink href="/" onClick={handleScrollToProjects}>
           Projets
         </NavLink>
-        <NavLink href="/testimonials" onClick={() => setIsMenuOpen(false)}>
+        {/*         <NavLink href="/testimonials" onClick={() => setIsMenuOpen(false)}>
           Avis
-        </NavLink>
-        <NavLink href="/posts" onClick={() => setIsMenuOpen(false)}>
-          Posts
-        </NavLink>
+        </NavLink> */}
       </div>
     </nav>
   );

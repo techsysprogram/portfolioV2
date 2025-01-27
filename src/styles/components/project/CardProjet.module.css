@@ -1,7 +1,6 @@
 .card {
-  background: var(--muted); /* Utilise la couleur de fond définie */
   color: var(--foreground);
-  padding: 32px;
+  padding: 30px;
   border-radius: 12px; /* Coins arrondis */
   box-shadow: 0px 6px 1px rgba(0, 0, 0, 0.15); /* Ombre douce */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -10,7 +9,27 @@
   margin-bottom: 20px;
   min-height: 150px; /* Assure une taille minimale */
 
+  box-shadow: 0px 4px 10px rgba(173, 143, 222, 0.3); /* Teinte violette */
+  background: linear-gradient(
+    to bottom,
+    rgba(153, 102, 204, 0.3), /* Violet clair */
+    rgba(191, 153, 231, 0.15) /* Violet pâle */
+  );
+  backdrop-filter: blur(5px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: pulse-violet 2s infinite alternate;
 }
+
+/* Animation subtile de pulsation */
+@keyframes pulse-violet {
+  0% {
+    box-shadow: 0px 4px 10px rgba(173, 143, 222, 0.2); /* Violet doux */
+  }
+  100% {
+    box-shadow: 0px 6px 14px rgba(153, 102, 204, 0.4); /* Violet plus marqué */
+  }
+}
+
 
 /* Effet au survol */
 .card:hover {
@@ -40,26 +59,15 @@
   padding: 15px;
 }
 
-
 .cardTitle {
   font-size: clamp(0.9rem, 3vw, 1.1rem);
   font-weight: bold;
-  color: var(--primary-dark);
+  color: var(--primary-bold);
   margin-bottom: 20px;
 
   white-space: nowrap; /* Empêche le texte de passer à la ligne suivante */
   overflow: hidden; /* Cache le texte qui dépasse */
   text-overflow: ellipsis; /* Ajoute "..." à la fin si le texte est trop long */
-
-  /* Animation de changement de couleur */
-  animation: textColorAnimation 4s linear infinite;
-}
-
-/* Animation */
-@keyframes textColorAnimation {
-  0% { color: #3b82f6; }  /* Bleu clair */
-  50% { color: #3e60bf; } /* Bleu profond */
-  100% { color: #3b82f6; } /* Retour à la couleur initiale */
 }
 
 .cardSummary {
