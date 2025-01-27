@@ -2,7 +2,7 @@
   background: var(--muted); /* Utilise la couleur de fond définie */
   color: var(--foreground);
   padding: 22px;
-  border-radius: 30px; /* Coins arrondis */
+  border-radius: 12px; /* Coins arrondis */
   box-shadow: 0px 6px 1px rgba(0, 0, 0, 0.15); /* Ombre douce */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid rgba(255, 255, 255, 0.1); /* Bordure légère */
@@ -67,14 +67,14 @@
 }
 
 .cardContent {
-  padding: 0px 15px;
+  padding: 0px 15px 10px 15px;
 }
 
 .cardSummary {
   font-size: clamp(0.9rem, 3vw, 1rem);
   color: var(--foreground);
 
-  height: 60px; /* Ajuste en fonction de la hauteur de ligne */
+  height: auto; /* Ajuste en fonction de la hauteur de ligne */
   line-height: 1.2em; /* Hauteur d'une ligne */
   display: -webkit-box;
   -webkit-line-clamp: 3; /* Limite à 3 lignes */
