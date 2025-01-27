@@ -39,11 +39,11 @@ export default function Navbar() {
 
   // Effet pour scroller après changement de page
   useEffect(() => {
-    ["Projects", "Posts", "mon-parcours", "Contact"].forEach((sectionId) => {
+    ["projects", "posts", "parcours", "contact"].forEach((sectionId) => {
       if (sessionStorage.getItem(`scrollTo${sectionId}`) === "true") {
         sessionStorage.removeItem(`scrollTo${sectionId}`);
         setTimeout(() => {
-          const section = document.getElementById(sectionId.toLowerCase());
+          const section = document.getElementById(sectionId);
           const navbar = document.querySelector(`.${styles.navbar}`);
           if (section && navbar) {
             const navbarHeight = navbar.clientHeight + 20;
@@ -66,10 +66,10 @@ export default function Navbar() {
         <ThemeToggle />
         <div className={styles.menu}>
           <NavLink href="/">Accueil</NavLink>
-          <NavLink href="/" onClick={(e) => handleScroll("posts", e)}>Posts</NavLink>
-          <NavLink href="/" onClick={(e) => handleScroll("projects", e)}>Projets</NavLink>
-          <NavLink href="/" onClick={(e) => handleScroll("mon-parcours", e)}>Mon Parcours</NavLink>
-          <NavLink href="/" onClick={(e) => handleScroll("contact", e)}>Contact</NavLink>
+          <NavLink href="/" onClick={(e) => handleScroll("posts", e as React.MouseEvent<HTMLAnchorElement>)}>Posts</NavLink>
+          <NavLink href="/" onClick={(e) => handleScroll("projects", e as React.MouseEvent<HTMLAnchorElement>)}>Projets</NavLink>
+          <NavLink href="/" onClick={(e) => handleScroll("parcours", e as React.MouseEvent<HTMLAnchorElement>)}>Parcours</NavLink>
+          <NavLink href="/" onClick={(e) => handleScroll("contact", e as React.MouseEvent<HTMLAnchorElement>)}>Contact</NavLink>
         </div>
         <div className={styles.socialLinks}>
           <NavLink href="https://www.linkedin.com/in/miguel-bellota-157144194/" external>
@@ -86,16 +86,16 @@ export default function Navbar() {
 
       <div className={`${styles.mobileMenu} ${isMenuOpen ? styles.active : ""}`}>
         <NavLink href="/" onClick={() => setIsMenuOpen(false)}>Accueil</NavLink>
-        <NavLink href="/" onClick={(e) => handleScroll("posts", e)}>Posts</NavLink>
-        <NavLink href="/" onClick={(e) => handleScroll("projects", e)}>Projets</NavLink>
-        <NavLink href="/" onClick={(e) => handleScroll("mon-parcours", e)}>Mon Parcours</NavLink>
-        <NavLink href="/" onClick={(e) => handleScroll("contact", e)}>Contact</NavLink>
+        <NavLink href="/" onClick={(e) => handleScroll("posts", e as React.MouseEvent<HTMLAnchorElement>)}>Posts</NavLink>
+        <NavLink href="/" onClick={(e) => handleScroll("projects", e as React.MouseEvent<HTMLAnchorElement>)}>Projets</NavLink>
+        <NavLink href="/" onClick={(e) => handleScroll("parcours", e as React.MouseEvent<HTMLAnchorElement>)}>Parcours</NavLink>
+        <NavLink href="/" onClick={(e) => handleScroll("contact", e as React.MouseEvent<HTMLAnchorElement>)}>Contact</NavLink>
       </div>
     </nav>
   );
 }
 
-function NavLink({ href, children, onClick, external = false }: { href: string; children: React.ReactNode; onClick?: () => void; external?: boolean }) {
+function NavLink({ href, children, onClick, external = false }: { href: string; children: React.ReactNode; onClick?: (e: React.MouseEvent<HTMLAnchorElement>) => void; external?: boolean }) {
   return external ? (
     <a href={href} className={styles.navLink} target="_blank" rel="noopener noreferrer">{children}</a>
   ) : (
