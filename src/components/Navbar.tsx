@@ -15,189 +15,90 @@ export default function Navbar() {
   const router = useRouter();
   const pathname = usePathname();
 
-  // ✅ Fonction pour scroller jusqu'à la section "Posts" avec un décalage
-  const handleScrollToPosts = (event?: React.MouseEvent<HTMLAnchorElement>) => {
+  // Fonction pour scroller avec décalage
+  const handleScroll = (sectionId: string, event?: React.MouseEvent<HTMLAnchorElement>) => {
     if (event) event.preventDefault();
     setIsMenuOpen(false);
 
     if (pathname === "/") {
-      const postsSection = document.getElementById("posts");
+      const section = document.getElementById(sectionId);
       const navbar = document.querySelector(`.${styles.navbar}`);
 
-      if (postsSection && navbar) {
+      if (section && navbar) {
         const navbarHeight = navbar.clientHeight + 20;
         window.scrollTo({
-          top: postsSection.offsetTop - navbarHeight,
+          top: section.offsetTop - navbarHeight,
           behavior: "smooth",
         });
       }
     } else {
-      // Stocker dans sessionStorage pour scroller après le changement de page
-      sessionStorage.setItem("scrollToPosts", "true");
+      sessionStorage.setItem(`scrollTo${sectionId}`, "true");
       router.push("/");
     }
   };
 
-  // ✅ Fonction pour scroller jusqu'à la section "Projets" avec un décalage
-  const handleScrollToProjects = (
-    event?: React.MouseEvent<HTMLAnchorElement>
-  ) => {
-    if (event) event.preventDefault();
-    setIsMenuOpen(false);
-
-    if (pathname === "/") {
-      const projectsSection = document.getElementById("projects");
-      const navbar = document.querySelector(`.${styles.navbar}`);
-
-      if (projectsSection && navbar) {
-        const navbarHeight = navbar.clientHeight + 20;
-        window.scrollTo({
-          top: projectsSection.offsetTop - navbarHeight,
-          behavior: "smooth",
-        });
-      }
-    } else {
-      // Stocke dans sessionStorage pour scroller après le changement de page
-      sessionStorage.setItem("scrollToProjects", "true");
-      router.push("/");
-    }
-  };
-
-  // ✅ Effet pour scroller automatiquement après un changement de page
+  // Effet pour scroller après changement de page
   useEffect(() => {
-    if (sessionStorage.getItem("scrollToProjects") === "true") {
-      sessionStorage.removeItem("scrollToProjects");
-      setTimeout(() => {
-        const projectsSection = document.getElementById("projects");
-        const navbar = document.querySelector(`.${styles.navbar}`);
-        if (projectsSection && navbar) {
-          const navbarHeight = navbar.clientHeight + 20;
-          window.scrollTo({
-            top: projectsSection.offsetTop - navbarHeight,
-            behavior: "smooth",
-          });
-        }
-      }, 500);
-    }
-
-    if (sessionStorage.getItem("scrollToPosts") === "true") {
-      sessionStorage.removeItem("scrollToPosts");
-      setTimeout(() => {
-        const postsSection = document.getElementById("posts");
-        const navbar = document.querySelector(`.${styles.navbar}`);
-        if (postsSection && navbar) {
-          const navbarHeight = navbar.clientHeight + 20;
-          window.scrollTo({
-            top: postsSection.offsetTop - navbarHeight,
-            behavior: "smooth",
-          });
-        }
-      }, 500);
-    }
+    ["Projects", "Posts", "mon-parcours", "Contact"].forEach((sectionId) => {
+      if (sessionStorage.getItem(`scrollTo${sectionId}`) === "true") {
+        sessionStorage.removeItem(`scrollTo${sectionId}`);
+        setTimeout(() => {
+          const section = document.getElementById(sectionId.toLowerCase());
+          const navbar = document.querySelector(`.${styles.navbar}`);
+          if (section && navbar) {
+            const navbarHeight = navbar.clientHeight + 20;
+            window.scrollTo({
+              top: section.offsetTop - navbarHeight,
+              behavior: "smooth",
+            });
+          }
+        }, 500);
+      }
+    });
   }, []);
 
   return (
     <nav className={styles.navbar}>
       <div className={styles.container}>
         <div className={styles.logoSection}>
-          <Link href="/" className={styles.logo}>
-            Portfolio
-          </Link>
+          <Link href="/" className={styles.logo}>Portfolio</Link>
         </div>
         <ThemeToggle />
-        {/* Menu Desktop */}
         <div className={styles.menu}>
           <NavLink href="/">Accueil</NavLink>
-          <NavLink href="/" onClick={handleScrollToPosts}>
-            Posts
-          </NavLink>
-
-          <NavLink href="/" onClick={handleScrollToProjects}>
-            Projets
-          </NavLink>
-          {/* <NavLink href="/testimonials">Avis</NavLink> */}
+          <NavLink href="/" onClick={(e) => handleScroll("posts", e)}>Posts</NavLink>
+          <NavLink href="/" onClick={(e) => handleScroll("projects", e)}>Projets</NavLink>
+          <NavLink href="/" onClick={(e) => handleScroll("mon-parcours", e)}>Mon Parcours</NavLink>
+          <NavLink href="/" onClick={(e) => handleScroll("contact", e)}>Contact</NavLink>
         </div>
-        {/* Icônes des réseaux sociaux */}
         <div className={styles.socialLinks}>
-          <NavLink
-            href="https://www.linkedin.com/in/miguel-bellota-157144194/"
-            external
-          >
-            <Image
-              src="https://res.cloudinary.com/dshznc4xx/image/upload/v1737820820/linkedin-icon_eg9yom.svg"
-              alt="LinkedIn"
-              width={24}
-              height={24}
-            />
+          <NavLink href="https://www.linkedin.com/in/miguel-bellota-157144194/" external>
+            <Image src="https://res.cloudinary.com/dshznc4xx/image/upload/v1737820820/linkedin-icon_eg9yom.svg" alt="LinkedIn" width={24} height={24} />
           </NavLink>
           <NavLink href="https://github.com/techsysprogram" external>
-            <Image
-              src="https://res.cloudinary.com/dshznc4xx/image/upload/v1737737364/github-icon-1_ck6fli.svg"
-              alt="GitHub"
-              width={24}
-              height={24}
-              style={{ filter: isDarkMode ? "invert(1)" : "none" }}
-            />
+            <Image src="https://res.cloudinary.com/dshznc4xx/image/upload/v1737737364/github-icon-1_ck6fli.svg" alt="GitHub" width={24} height={24} style={{ filter: isDarkMode ? "invert(1)" : "none" }} />
           </NavLink>
         </div>
-        {/* Icône du menu mobile */}
-        <div
-          className={styles.menuMobile}
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          {isMenuOpen ? (
-            <X className={styles.icon} />
-          ) : (
-            <Menu className={styles.icon} />
-          )}
+        <div className={styles.menuMobile} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          {isMenuOpen ? <X className={styles.icon} /> : <Menu className={styles.icon} />}
         </div>
       </div>
 
-      {/* Menu Mobile Déroulant */}
-      <div
-        className={`${styles.mobileMenu} ${isMenuOpen ? styles.active : ""}`}
-      >
-        <NavLink href="/" onClick={() => setIsMenuOpen(false)}>
-          Accueil
-        </NavLink>
-        <NavLink href="/" onClick={handleScrollToPosts}>
-          Posts
-        </NavLink>
-        <NavLink href="/" onClick={handleScrollToProjects}>
-          Projets
-        </NavLink>
-        {/*         <NavLink href="/testimonials" onClick={() => setIsMenuOpen(false)}>
-          Avis
-        </NavLink> */}
+      <div className={`${styles.mobileMenu} ${isMenuOpen ? styles.active : ""}`}>
+        <NavLink href="/" onClick={() => setIsMenuOpen(false)}>Accueil</NavLink>
+        <NavLink href="/" onClick={(e) => handleScroll("posts", e)}>Posts</NavLink>
+        <NavLink href="/" onClick={(e) => handleScroll("projects", e)}>Projets</NavLink>
+        <NavLink href="/" onClick={(e) => handleScroll("mon-parcours", e)}>Mon Parcours</NavLink>
+        <NavLink href="/" onClick={(e) => handleScroll("contact", e)}>Contact</NavLink>
       </div>
     </nav>
   );
 }
 
-// 🔥 Composant NavLink amélioré pour gérer les liens internes et externes
-function NavLink({
-  href,
-  children,
-  onClick,
-  external = false,
-}: {
-  href: string;
-  children: React.ReactNode;
-  onClick?: () => void;
-  external?: boolean;
-}) {
+function NavLink({ href, children, onClick, external = false }: { href: string; children: React.ReactNode; onClick?: () => void; external?: boolean }) {
   return external ? (
-    <a
-      href={href}
-      className={styles.navLink}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {children}
-    </a>
+    <a href={href} className={styles.navLink} target="_blank" rel="noopener noreferrer">{children}</a>
   ) : (
-    <Link href={href} className={styles.navLink} onClick={onClick}>
-      {children}
-    </Link>
+    <Link href={href} className={styles.navLink} onClick={onClick}>{children}</Link>
   );
 }

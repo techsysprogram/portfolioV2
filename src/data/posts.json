@@ -36,10 +36,10 @@
     "title": "Mon évolution technologique en tant que développeur indépendant",
     "summary": "Comment j’ai évolué de WordPress et PHP vers Next.js et TypeScript pour des applications modernes et performantes.",
     "content": [
-      "Depuis que je suis freelance, j’ai affiné ma stack technologique pour être plus productif et efficace.",
-      "Avant de découvrir Next.js et TypeScript, je travaillais principalement avec WordPress et PHP pour créer des sites web. Ces technologies m’ont permis d'acquérir une bonne compréhension du développement web, mais j’avais besoin d’une approche plus moderne et optimisée.",
-      "Pour les logiciels métiers, j’ai longtemps utilisé WinDev, un outil puissant pour le développement d’applications d'entreprise. Cependant, avec l'évolution du marché, j’ai voulu me diversifier et apprendre de nouvelles technologies plus flexibles.",
-      "Je commence à peine avec Next.js, mais j’apprécie déjà ses performances et sa structure optimisée. Associé à TypeScript, il m’aide à écrire du code plus clair et maintenable."
+      "Depuis que je suis freelance, j’ai affiné ma stack technologique pour gagner en productivité et en efficacité.",
+      "À l’origine, je travaillais principalement avec WinDev pour les applications PC, et avec WordPress et PHP pour le web. Cependant, ces outils me limitaient aussi bien en termes d’esthétique que de fonctionnalités. J’avais besoin d’une approche plus moderne et optimisée.",
+      "C'est pourquoi j’ai entrepris une formation en autodidacte, complétée par des formations spécifiques, afin de maîtriser les technologies du développement web. J’ai ainsi créé plusieurs sites avec la stack MERN (MongoDB, Express, React, Node.js), ce qui m’a permis d’acquérir de l’expérience au fil des projets.",
+      "Aujourd’hui, je commence à explorer Next.js, et j’apprécie déjà ses performances ainsi que sa structure optimisée. Associé à TypeScript, il me permet d’écrire un code plus clair, maintenable et robuste."
     ],
     "images": [
       "https://res.cloudinary.com/dshznc4xx/image/upload/v1737995872/Capture_d_e%CC%81cran_2025-01-27_a%CC%80_17.37.37_g1pp2t.png"
@@ -51,7 +51,7 @@
         "url": "https://nextjs.org/docs"
       }
     ]
-  },
+  },  
   {
     "id": 3,
     "title": "De l'industrie à la tech : Mon passage du CDI au freelancing",

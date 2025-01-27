@@ -12,16 +12,16 @@ export default function About() {
         et volonté de toujours progresser.
       </p>
       <p className="text">
-        Autodidacte, J'ai transformé{" "}
+        👨🏻‍💻 Autodidacte, J'ai transformé{" "}
         <span className="highlight">ma passion en métier il y a 5 ans</span>.
         J’ai affûté mes compétences en explorant diverses technologies et en
         suivant des formations, notamment chez{" "}
         <span className="highlight">Noa Forma</span>,{" "}
         <span className="highlight">Neobridge</span> et au{" "}
-        <span className="highlight">Bootcamp Le Reacteur</span> en 2024.
+        <span className="highlight">Bootcamp Le Reacteur ❤️.</span>
       </p>
       <p className="text">
-        Spécialisé dans le développement <strong>web & app</strong>,
+        Spécialisé dans le développement <strong>web & app</strong>,{" "}
         j’accorde une grande importance à{" "}
         <strong>
           l’expérience utilisateur, la performance et la scalabilité
@@ -29,11 +29,11 @@ export default function About() {
         .
       </p>
       <p className="text">
-        Toujours en veille sur les dernières tendances,{" "}
+        Toujours en veille sur les dernières tendances, 👍🏼{" "}
         <span className="highlight">
-          mon objectif est d’offrir des solutions digitales
-        </span>{" "}
-        adaptées et innovantes.
+          Je vise à créer des applications intuitives et visuellement
+          attractives pour une expérience utilisateur fluide et agréable.
+        </span>
       </p>
     </section>
   );
