@@ -1,6 +1,6 @@
 /* 🎨 Styles Typographiques */
 .title {
-  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  font-size: clamp(1.0rem, 3vw, 1.3rem);
   font-weight: bold;
   margin-bottom: 16px;
   color: var(--foreground);
