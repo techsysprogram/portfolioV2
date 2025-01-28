@@ -7,8 +7,9 @@ export default function Contact() {
     <section id="contact" className={styles.contact}>
       <h2 className="title">Contact</h2>
       <p className="text">
-        Intéressé par une collaboration ou des informations supplémentaires ?
-        Contactez-moi !
+        Intéressé par une collaboration ou besoin d'informations supplémentaires
+        ? N’hésitez pas à me contacter ! Je suis également à la recherche d’un
+        CDI en mode hybride et ouvert aux opportunités.
       </p>
       <div className={styles.buttons}>
         <Button
@@ -19,9 +20,14 @@ export default function Contact() {
         </Button>
         <Button
           variant="secondary"
-          onClick={() => window.open("/cv/miguel-bellota-cv.pdf", "_blank")}
+          onClick={() =>
+            window.open(
+              "https://filedn.eu/lWmHm0zj5cX4lKsrCUMs4HR/techsysprogram/CV%20Miguel%20Bellota.pdf",
+              "_blank"
+            )
+          }
         >
-          Télécharger Mon CV
+          Voir Mon CV
         </Button>
       </div>
     </section>

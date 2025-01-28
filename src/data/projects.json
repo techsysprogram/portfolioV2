@@ -16,25 +16,39 @@
   },
   {
     "id": 2,
-    "title": "Marvel Clone",
-    "summary": "Une application web permettant d’explorer l’univers Marvel à travers une interface fluide et intuitive.",
+    "title": "QuizTime",
+    "summary": "Une plateforme de quiz interactif combinant électronique et programmation, conçue pour des compétitions dynamiques.",
     "description": [
-      "Développée avec la stack MERN (MongoDB, Express, React, Node.js), cette application permet aux utilisateurs de rechercher des personnages, comics et séries issus de l’univers Marvel grâce à l’API Marvel.",
-      "J’ai intégré un système d’authentification, une gestion avancée des favoris pour offrir une expérience personnalisée.",
-      "Ce projet met en avant mes compétences en intégration d’API, gestion d’état avec React, optimisation des performances et design responsive."
+      "J’ai développé le jeu QuizTime en 2022 en utilisant Arduino (C++) et WinDev (WLangage) pour concevoir un système de quiz interactif avec pupitres électroniques et boutons lumineux.",
+      "L’Arduino, programmé en C++, gère toute la partie électronique, incluant la gestion des boutons, l’éclairage des pupitres et la transmission des réponses.",
+      "L’ensemble du système est centralisé sur un seul PC, qui contrôle le jeu et affiche les questions et scores sur les écrans des pupitres.",
+      "La communication entre l’Arduino et le PC s’effectue via une connexion Ethernet, assurant une transmission rapide et fiable des données.",
+      "Ce projet illustre ma capacité à concevoir des systèmes interactifs en intégrant programmation, électronique et connectivité réseau."
     ],
-    "links": [
-      {
-        "name": "Marvel Clone - Recherche de super-héros",
-        "url": "https://marvel-miguel.netlify.app/"
-      }
-    ],
+    "links": [],
     "images": [
-      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737988714/Capture_d_e%CC%81cran_2025-01-27_a%CC%80_15.38.02_odllgm.png"
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737828733/quiztime2_kbxed6.jpg",
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737829811/quiztime3_sydvvt.webp"
     ]
   },
   {
     "id": 3,
+    "title": "Livret d'accueil numérique",
+    "summary": "Un outil digital facilitant l’accueil et l’information des voyageurs dans les hébergements touristiques.",
+    "description": [
+      "Développement d’une plateforme intuitive permettant aux propriétaires de gîtes et locations saisonnières de créer un livret d'accueil personnalisé et interactif.",
+      "Mise en place d’un système de gestion de contenu permettant d’ajouter des informations essentielles : règles du logement, recommandations locales, consignes d’utilisation des équipements, et contacts utiles.",
+      "Optimisation de l’accessibilité via une interface web ergonomique et responsive, garantissant une expérience fluide sur mobile, tablette et PC.",
+      "Intégration de fonctionnalités avancées telles que la traduction automatique, les QR codes pour un accès rapide."
+    ],
+    "links": [],
+    "images": [
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1738020875/Capture_d_e%CC%81cran_2025-01-28_a%CC%80_00.33.11_q5tmg6.png",
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737990541/Capture_d_e%CC%81cran_2025-01-27_a%CC%80_15.59.31_kgttvq.png"
+    ]
+  },
+  {
+    "id": 4,
     "title": "Vinted Clone",
     "summary": "Une plateforme d’achat et de vente de vêtements d’occasion inspirée du site Vinted.",
     "description": [
@@ -53,36 +67,22 @@
     ]
   },
   {
-    "id": 4,
-    "title": "QuizTime",
-    "summary": "Une plateforme de quiz interactif combinant électronique et programmation, conçue pour des compétitions dynamiques.",
-    "description": [
-      "J’ai développé le jeu QuizTime en 2022 en utilisant Arduino (C++) et WinDev (WLangage) pour concevoir un système de quiz interactif avec pupitres électroniques et boutons lumineux.",
-      "L’Arduino, programmé en C++, gère toute la partie électronique, incluant la gestion des boutons, l’éclairage des pupitres et la transmission des réponses.",
-      "L’ensemble du système est centralisé sur un seul PC, qui contrôle le jeu et affiche les questions et scores sur les écrans des pupitres.",
-      "La communication entre l’Arduino et le PC s’effectue via une connexion Ethernet, assurant une transmission rapide et fiable des données.",
-      "Ce projet illustre ma capacité à concevoir des systèmes interactifs en intégrant programmation, électronique et connectivité réseau."
-    ],
-    "links": [],
-    "images": [
-      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737828733/quiztime2_kbxed6.jpg",
-      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737829811/quiztime3_sydvvt.webp"
-    ]
-  },
-  {
     "id": 5,
-    "title": "Livret d'accueil numérique",
-    "summary": "Un outil digital facilitant l’accueil et l’information des voyageurs dans les hébergements touristiques.",
+    "title": "Marvel Clone",
+    "summary": "Une application web permettant d’explorer l’univers Marvel à travers une interface fluide et intuitive.",
     "description": [
-      "Développement d’une plateforme intuitive permettant aux propriétaires de gîtes et locations saisonnières de créer un livret d'accueil personnalisé et interactif.",
-      "Mise en place d’un système de gestion de contenu permettant d’ajouter des informations essentielles : règles du logement, recommandations locales, consignes d’utilisation des équipements, et contacts utiles.",
-      "Optimisation de l’accessibilité via une interface web ergonomique et responsive, garantissant une expérience fluide sur mobile, tablette et PC.",
-      "Intégration de fonctionnalités avancées telles que la traduction automatique, les QR codes pour un accès rapide."
+      "Développée avec la stack MERN (MongoDB, Express, React, Node.js), cette application permet aux utilisateurs de rechercher des personnages, comics et séries issus de l’univers Marvel grâce à l’API Marvel.",
+      "J’ai intégré un système d’authentification, une gestion avancée des favoris pour offrir une expérience personnalisée.",
+      "Ce projet met en avant mes compétences en intégration d’API, gestion d’état avec React, optimisation des performances et design responsive."
     ],
-    "links": [],
+    "links": [
+      {
+        "name": "Marvel Clone - Recherche de super-héros",
+        "url": "https://marvel-miguel.netlify.app/"
+      }
+    ],
     "images": [
-      "https://res.cloudinary.com/dshznc4xx/image/upload/v1738020875/Capture_d_e%CC%81cran_2025-01-28_a%CC%80_00.33.11_q5tmg6.png",
-      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737990541/Capture_d_e%CC%81cran_2025-01-27_a%CC%80_15.59.31_kgttvq.png"
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737988714/Capture_d_e%CC%81cran_2025-01-27_a%CC%80_15.38.02_odllgm.png"
     ]
   }
 ]
