@@ -1,6 +1,6 @@
 .reviewSection {
   text-align: center;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .sliderContainer {
@@ -10,7 +10,7 @@
 }
 
 .swiperWrapper {
-  padding: 0px 15px;
+  padding: 0px 15px 20px 15px;
 }
 
 .reviewCard {
@@ -25,14 +25,13 @@
   text-align: center;
   width: 100%;
   max-width: 500px;
-  margin: auto;
+  /* margin: auto; */
 
 }
 
 .reviewStars {
   font-size: 1.2rem;
   color: #f1c40f;
-  margin: 5px 0;
 }
 
 .arrowButton {
