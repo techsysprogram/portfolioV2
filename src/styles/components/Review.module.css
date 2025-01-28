@@ -1,0 +1,105 @@
+.reviewSection {
+  text-align: center;
+  padding: 20px;
+}
+
+.sliderContainer {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.swiperWrapper {
+  padding: 0px 15px;
+}
+
+.reviewCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px ;
+  background-color: var(--card-background-color);
+  padding: 0 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px var(--card-border-color);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+
+}
+
+.reviewStars {
+  font-size: 1.2rem;
+  color: #f1c40f;
+  margin: 5px 0;
+}
+
+.arrowButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  cursor: pointer;
+  color: white;
+  opacity: 0.8;
+  transition: opacity 0.3s, transform 0.2s;
+  padding: 15px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrowButton:hover {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.2);
+}
+
+.arrowIcon {
+  width: 32px;
+  height: 32px;
+}
+
+.reviewPrev {
+  left: -30px;
+}
+
+.reviewNext {
+  right: -30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .arrowButton {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
+  .arrowIcon {
+    width: 24px;
+    height: 24px;
+  }
+  .reviewPrev {
+    left: 5px;
+  }
+  .reviewNext {
+    right: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .arrowButton {
+    width: 35px;
+    height: 35px;
+  }
+  .reviewPrev {
+    left: 5px;
+  }
+  .reviewNext {
+    right: 5px;
+  }
+}

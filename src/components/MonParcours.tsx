@@ -21,7 +21,7 @@ export default function MonParcours() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const section = document.getElementById("mon-parcours");
+      const section = document.getElementById("parcours");
       if (section) {
         const { top } = section.getBoundingClientRect();
         if (top < window.innerHeight - 100) {
@@ -36,7 +36,7 @@ export default function MonParcours() {
 
   return (
     <section
-      id="mon-parcours"
+      id="parcours"
       className={`${styles.monParcours} ${isVisible ? styles.visible : ""}`}
     >
       <section>

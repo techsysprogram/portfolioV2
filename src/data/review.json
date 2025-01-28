@@ -1,0 +1,17 @@
+[
+    {
+      "_id": "1",
+      "user": "R-Tech System",
+      "avatar": "https://res.cloudinary.com/dshznc4xx/image/upload/v1738025009/user-placehold_s9aag7.jpg",
+      "rating": 5,
+      "reviewText": "Logiciel réalisé en totale conformité avec la demande, délais respectés, écoute, rigueur, flexibilité… je recommande, Merci Miguel"
+    },
+    {
+      "_id": "2",
+      "user": "Ma Conciergerie en Occitanie",
+      "avatar": "https://res.cloudinary.com/dshznc4xx/image/upload/v1738025009/user-placehold_s9aag7.jpg",
+      "rating": 5,
+      "reviewText": "Nous avons fait appel à Miguel pour la création d’un livret d’accueil, et nous sommes ravis du résultat ! Le document est clair et bien structuré. Grâce à son expertise, il a su rendre les informations accessibles et attractives. Un grand merci pour ta réactivité ! Nous recommandons sans hésitation."
+    }
+  ]
+  

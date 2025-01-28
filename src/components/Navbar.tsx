@@ -66,9 +66,9 @@ export default function Navbar() {
         <ThemeToggle />
         <div className={styles.menu}>
           <NavLink href="/">Accueil</NavLink>
-          <NavLink href="/" onClick={(e) => handleScroll("posts", e as React.MouseEvent<HTMLAnchorElement>)}>Posts</NavLink>
-          <NavLink href="/" onClick={(e) => handleScroll("projects", e as React.MouseEvent<HTMLAnchorElement>)}>Projets</NavLink>
-          <NavLink href="/" onClick={(e) => handleScroll("parcours", e as React.MouseEvent<HTMLAnchorElement>)}>Parcours</NavLink>
+          <NavLink href="/" onClick={(e) => handleScroll("posts", e as React.MouseEvent<HTMLAnchorElement>)}>Mes Publications</NavLink>
+          <NavLink href="/" onClick={(e) => handleScroll("projects", e as React.MouseEvent<HTMLAnchorElement>)}>Mes Projets</NavLink>
+          <NavLink href="/" onClick={(e) => handleScroll("parcours", e as React.MouseEvent<HTMLAnchorElement>)}>Mon Parcours</NavLink>
           <NavLink href="/" onClick={(e) => handleScroll("contact", e as React.MouseEvent<HTMLAnchorElement>)}>Contact</NavLink>
         </div>
         <div className={styles.socialLinks}>
@@ -86,9 +86,9 @@ export default function Navbar() {
 
       <div className={`${styles.mobileMenu} ${isMenuOpen ? styles.active : ""}`}>
         <NavLink href="/" onClick={() => setIsMenuOpen(false)}>Accueil</NavLink>
-        <NavLink href="/" onClick={(e) => handleScroll("posts", e as React.MouseEvent<HTMLAnchorElement>)}>Posts</NavLink>
-        <NavLink href="/" onClick={(e) => handleScroll("projects", e as React.MouseEvent<HTMLAnchorElement>)}>Projets</NavLink>
-        <NavLink href="/" onClick={(e) => handleScroll("parcours", e as React.MouseEvent<HTMLAnchorElement>)}>Parcours</NavLink>
+        <NavLink href="/" onClick={(e) => handleScroll("posts", e as React.MouseEvent<HTMLAnchorElement>)}>Mes Publications</NavLink>
+        <NavLink href="/" onClick={(e) => handleScroll("projects", e as React.MouseEvent<HTMLAnchorElement>)}>Mes Projets</NavLink>
+        <NavLink href="/" onClick={(e) => handleScroll("parcours", e as React.MouseEvent<HTMLAnchorElement>)}>Mon Parcours</NavLink>
         <NavLink href="/" onClick={(e) => handleScroll("contact", e as React.MouseEvent<HTMLAnchorElement>)}>Contact</NavLink>
       </div>
     </nav>

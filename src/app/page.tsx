@@ -8,6 +8,7 @@ import Contact from "@/components/Contact";
 import Skills from "@/components/Skills";
 import MonParcours from "@/components/MonParcours";
 import Posts from "@/components/post/Posts";
+import Review from "@/components/Review";
 
 
 export default function Home() {
@@ -30,6 +31,7 @@ export default function Home() {
         <Posts />
         <Skills />
         <Projects/>
+        <Review />
         <MonParcours />
         <Contact />
       </div>

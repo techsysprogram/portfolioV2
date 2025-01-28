@@ -74,7 +74,7 @@ export default function Posts() {
 
   return (
     <section className={styles.posts} id="posts">
-      <h2 className="title">Mes Articles</h2>
+      <h2 className="title">Mes Publications</h2>
 
       <div className={styles.sliderContainer}>
         {!isBeginning && (
