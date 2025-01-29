@@ -10,11 +10,9 @@ const ThemeContext = createContext({
 // 2️⃣ Provider qui stocke l'état du mode sombre
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [isDarkMode, setIsDarkMode] = useState<boolean | null>(null); // ✅ Empêche le flash blanc
-  console.log("je suis là");
 
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");
-    console.log("Thème stocké :", storedTheme);
     
     if (storedTheme) {
       setIsDarkMode(storedTheme === "dark");
