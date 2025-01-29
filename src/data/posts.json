@@ -1,59 +1,22 @@
 [
   {
     "id": 1,
-    "title": "Pourquoi j'ai choisi Next.js, TypeScript et CSS pur pour mon portfolio",
-    "summary": "Mon approche technique pour concevoir un portfolio performant et maintenable.",
+    "title": "Mes outils essentiels pour optimiser mon travail de développeur indépendant",
+    "summary": "Les logiciels et services que j’utilise au quotidien pour gagner en productivité et organisation.",
     "content": [
-      "Créer un portfolio est essentiel pour un développeur afin de mettre en avant son expertise et ses réalisations.",
-      "J'ai choisi Next.js pour ses performances, sa facilité de gestion du routage et son rendu statique, ce qui améliore le SEO et la rapidité d'affichage.",
-      "L'utilisation de TypeScript m'a permis de renforcer la sécurité de mon code et d'éviter de nombreuses erreurs en bénéficiant d'un typage fort.",
-      "Contrairement à Tailwind CSS, j'ai préféré utiliser du CSS pur pour avoir un contrôle total sur le design et éviter une surcharge de classes utilitaires. J’aime pouvoir écrire mon CSS de manière plus structurée et modulaire, sans dépendre d’une bibliothèque externe qui pourrait impacter les performances et la lisibilité du code.",
-      "En termes de déploiement, j’ai fait le choix de Northflank plutôt que Vercel. Bien que Vercel soit l’option la plus populaire pour héberger des applications Next.js, Northflank me permet une meilleure gestion des ressources et un contrôle plus poussé sur les services que j’utilise. C'est un choix personnel basé sur ma volonté de diversifier les solutions techniques que j'explore.",
-      "Grâce à cette stack, mon portfolio est optimisé, fluide et facilement évolutif pour présenter mes projets et mon expérience."
+      "Visual Studio Code est mon éditeur de choix pour sa rapidité et son écosystème d'extensions comme Prettier et ESLint.",
+      "Postman est un outil indispensable pour la gestion des API. Il me permet de tester, documenter et automatiser les appels API, facilitant ainsi le développement et l'intégration des services back-end.",
+      "Enfin, GitHub est indispensable pour la gestion de versions et le travail en collaboration.",
+      "Un autre outil qui a transformé ma façon de travailler est Notion. Avant, je notais mes idées un peu partout, entre fichiers texte, post-it et Google Docs, ce qui rendait la gestion des informations chaotique. Aujourd’hui, j’utilise Notion pour centraliser tous mes projets, suivre mes tâches et organiser mes apprentissages en développement. Cela m’aide à être plus structuré et à gagner en efficacité."
     ],
     "images": [
-      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737998299/Copie_de_httpsres.cloudinary.comdshznc4xximageuploadv1737854485notion-2_oxfqua.svg_1_hbwu5x.png",
-      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737991144/Capture_d_e%CC%81cran_2025-01-27_a%CC%80_16.18.43_a35p31.png"
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737996718/httpsres.cloudinary.comdshznc4xximageuploadv1737854485notion-2_oxfqua.svg_arlldz.png"
     ],
     "videos": [],
-    "links": [
-      {
-        "name": "Découvrir Next.js",
-        "url": "https://nextjs.org/"
-      },
-      {
-        "name": "Pourquoi utiliser TypeScript ?",
-        "url": "https://www.typescriptlang.org/"
-      },
-      {
-        "name": "Principes avancés du CSS pur",
-        "url": "https://developer.mozilla.org/fr/docs/Web/CSS"
-      }
-    ]
+    "links": []
   },
   {
     "id": 2,
-    "title": "Mon évolution technologique en tant que développeur indépendant",
-    "summary": "Comment j’ai évolué de WordPress et PHP vers Next.js et TypeScript pour des applications modernes et performantes.",
-    "content": [
-      "Depuis que je suis freelance, j’ai affiné ma stack technologique pour gagner en productivité et en efficacité.",
-      "À l’origine, je travaillais principalement avec WinDev pour les applications PC, et avec WordPress et PHP pour le web. Cependant, ces outils me limitaient aussi bien en termes d’esthétique que de fonctionnalités. J’avais besoin d’une approche plus moderne et optimisée.",
-      "C'est pourquoi j’ai entrepris une formation en autodidacte, complétée par des formations spécifiques, afin de maîtriser les technologies du développement web. J’ai ainsi créé plusieurs sites avec la stack MERN (MongoDB, Express, React, Node.js), ce qui m’a permis d’acquérir de l’expérience au fil des projets.",
-      "Aujourd’hui, je commence à explorer Next.js, et j’apprécie déjà ses performances ainsi que sa structure optimisée. Associé à TypeScript, il me permet d’écrire un code plus clair, maintenable et robuste."
-    ],
-    "images": [
-      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737995872/Capture_d_e%CC%81cran_2025-01-27_a%CC%80_17.37.37_g1pp2t.png"
-    ],
-    "videos": [],
-    "links": [
-      {
-        "name": "Apprendre Next.js avec TypeScript",
-        "url": "https://nextjs.org/docs"
-      }
-    ]
-  },  
-  {
-    "id": 3,
     "title": "De l'industrie à la tech : Mon passage du CDI au freelancing",
     "summary": "Comment j'ai quitté un poste stable en industrie pour devenir développeur indépendant.",
     "content": [
@@ -78,19 +41,48 @@
     ]
   },
   {
-    "id": 4,
-    "title": "Mes outils essentiels pour optimiser mon travail de développeur indépendant",
-    "summary": "Les logiciels et services que j’utilise au quotidien pour gagner en productivité et organisation.",
+    "id": 3,
+    "title": "Mon évolution technologique en tant que développeur indépendant",
+    "summary": "Comment j’ai évolué de WordPress et PHP vers Next.js et TypeScript pour des applications modernes et performantes.",
     "content": [
-      "Visual Studio Code est mon éditeur de choix pour sa rapidité et son écosystème d'extensions comme Prettier et ESLint.",
-      "Postman est un outil indispensable pour la gestion des API. Il me permet de tester, documenter et automatiser les appels API, facilitant ainsi le développement et l'intégration des services back-end.",
-      "Enfin, GitHub est indispensable pour la gestion de versions et le travail en collaboration.",
-      "Un autre outil qui a transformé ma façon de travailler est Notion. Avant, je notais mes idées un peu partout, entre fichiers texte, post-it et Google Docs, ce qui rendait la gestion des informations chaotique. Aujourd’hui, j’utilise Notion pour centraliser tous mes projets, suivre mes tâches et organiser mes apprentissages en développement. Cela m’aide à être plus structuré et à gagner en efficacité."
+      "Depuis que je suis freelance, j’ai affiné ma stack technologique pour gagner en productivité et en efficacité.",
+      "À l’origine, je travaillais principalement avec WinDev pour les applications PC, et avec WordPress et PHP pour le web. Cependant, ces outils me limitaient aussi bien en termes d’esthétique que de fonctionnalités. J’avais besoin d’une approche plus moderne et optimisée.",
+      "C'est pourquoi j’ai entrepris une formation en autodidacte, complétée par des formations spécifiques, afin de maîtriser les technologies du développement web. J’ai ainsi créé plusieurs sites avec la stack MERN (MongoDB, Express, React, Node.js), ce qui m’a permis d’acquérir de l’expérience au fil des projets.",
+      "Aujourd’hui, je commence à explorer Next.js, et j’apprécie déjà ses performances ainsi que sa structure optimisée. Associé à TypeScript, il me permet d’écrire un code plus clair, maintenable et robuste."
     ],
     "images": [
-      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737996718/httpsres.cloudinary.comdshznc4xximageuploadv1737854485notion-2_oxfqua.svg_arlldz.png"
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737995872/Capture_d_e%CC%81cran_2025-01-27_a%CC%80_17.37.37_g1pp2t.png"
     ],
     "videos": [],
-    "links": []
+    "links": [
+      {
+        "name": "Apprendre Next.js avec TypeScript",
+        "url": "https://nextjs.org/docs"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Pourquoi j'ai choisi Next.js, TypeScript et CSS pur pour mon portfolio",
+    "summary": "Mon approche technique pour concevoir un portfolio performant et maintenable.",
+    "content": [
+      "Créer un portfolio est essentiel pour un développeur afin de mettre en avant son expertise et ses réalisations.",
+      "J'ai choisi Next.js pour ses performances, sa facilité de gestion du routage et son rendu statique, ce qui améliore le SEO et la rapidité d'affichage.",
+      "L'utilisation de TypeScript m'a permis de renforcer la sécurité de mon code et d'éviter de nombreuses erreurs en bénéficiant d'un typage fort.",
+      "Contrairement à Tailwind CSS, j'ai préféré utiliser du CSS pur pour avoir un contrôle total sur le design et éviter une surcharge de classes utilitaires. J’aime pouvoir écrire mon CSS de manière plus structurée et modulaire, sans dépendre d’une bibliothèque externe qui pourrait impacter les performances et la lisibilité du code.",
+      "En termes de déploiement, j’ai fait le choix de Northflank plutôt que Vercel. Bien que Vercel soit l’option la plus populaire pour héberger des applications Next.js, Northflank me permet une meilleure gestion des ressources et un contrôle plus poussé sur les services que j’utilise. C'est un choix personnel basé sur ma volonté de diversifier les solutions techniques que j'explore.",
+      "Grâce à cette stack, mon portfolio est optimisé, fluide et facilement évolutif pour présenter mes projets et mon expérience."
+    ],
+    "images": [
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737998299/Copie_de_httpsres.cloudinary.comdshznc4xximageuploadv1737854485notion-2_oxfqua.svg_1_hbwu5x.png",
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737991144/Capture_d_e%CC%81cran_2025-01-27_a%CC%80_16.18.43_a35p31.png"
+    ],
+    "videos": [],
+    "links": [
+      {
+        "name": "Découvrir Next.js",
+        "url": "https://nextjs.org/"
+      }
+    ]
   }
 ]

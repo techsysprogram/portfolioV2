@@ -19,6 +19,9 @@ export default function Projects() {
   const [isEnd, setIsEnd] = useState(false);
   const swiperRef = useRef<SwiperClass | null>(null);
 
+  // Trier les Projets par ID décroissant
+  const sortedProjets = [...projectsData].sort((a, b) => b.id - a.id);
+
   useEffect(() => {
     const lastViewedProjectId = sessionStorage.getItem("lastViewedProjectId");
     const scrollPosition = sessionStorage.getItem("scrollPosition");
@@ -29,7 +32,7 @@ export default function Projects() {
     }
 
     if (lastViewedProjectId) {
-      const foundIndex = projectsData.findIndex((p) => p.id === Number(lastViewedProjectId));
+      const foundIndex = sortedProjets.findIndex((p) => p.id === Number(lastViewedProjectId));
       if (foundIndex !== -1) {
         setActiveProjectIndex(foundIndex);
       }
@@ -104,7 +107,7 @@ export default function Projects() {
             updateNavState();
           }}
         >
-          {projectsData.map((project) => (
+          {sortedProjets.map((project) => (
             <SwiperSlide key={project.id} onClick={() => handleProjectClick(project.id)}>
               <Card
                 project={{

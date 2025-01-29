@@ -19,6 +19,11 @@ export default function Posts() {
   const [isEnd, setIsEnd] = useState(false);
   const swiperRef = useRef<SwiperClass | null>(null);
 
+
+  // Trier les posts par ID décroissant
+  const sortedPosts = [...postsData].sort((a, b) => b.id - a.id);
+
+
   useEffect(() => {
     const lastViewedPostId = sessionStorage.getItem("lastViewedPostId");
     const scrollPosition = sessionStorage.getItem("scrollPosition");
@@ -29,7 +34,7 @@ export default function Posts() {
     }
 
     if (lastViewedPostId) {
-      const foundIndex = postsData.findIndex((p) => p.id === Number(lastViewedPostId));
+      const foundIndex = sortedPosts.findIndex((p) => p.id === Number(lastViewedPostId));
       if (foundIndex !== -1) {
         setActivePostIndex(foundIndex);
       }
@@ -106,7 +111,7 @@ export default function Posts() {
             updateNavState();
           }}
         >
-          {postsData.map((post) => (
+          {sortedPosts.map((post) => (
             <SwiperSlide key={post.id} onClick={() => handlePostClick(post.id)}>
               <CardPost post={post} />
             </SwiperSlide>
