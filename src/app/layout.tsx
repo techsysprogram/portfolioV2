@@ -12,27 +12,27 @@ const exo2 = Exo_2({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: "Miguel Bellota - Portfolio",
-  description: "Portfolio développé avec Next.js et CSS",
+  description: "Portfolio développé avec Next.js et CSS pur",
   openGraph: {
     title: "Miguel Bellota - Portfolio",
-    description: "Portfolio développé avec Next.js et CSS",
-    url: "https://techsysprogram.com", 
+    description: "Portfolio développé avec Next.js et CSS pur",
+    url: "https://techsysprogram.com",
     siteName: "Miguel Bellota - Portfolio",
     images: [
       {
-        url: "https://res.cloudinary.com/dshznc4xx/image/upload/v1737478718/MiguelPC_d1f2ux.jpg", 
+        url: "https://res.cloudinary.com/dshznc4xx/image/upload/w_1200,h_630,c_fill/v1737478718/MiguelPC_d1f2ux.jpg", // Open Graph (1200x630)
         width: 1200,
         height: 630,
-        alt: "Aperçu du portfolio de Miguel Bellota",
+        alt: "Miguel Bellota en train de coder sur son PC",
       },
     ],
     type: "website",
   },
   twitter: {
-    card: "summary_large_image", 
+    card: "summary_large_image",
     title: "Miguel Bellota - Portfolio",
-    description: "Portfolio développé avec Next.js et CSS",
-    images: ["https://res.cloudinary.com/dshznc4xx/image/upload/v1737478718/MiguelPC_d1f2ux.jpg"], 
+    description: "Portfolio développé avec Next.js et CSS pur",
+    images: ["https://res.cloudinary.com/dshznc4xx/image/upload/w_1200,h_600,c_fill/v1737478718/MiguelPC_d1f2ux.jpg"], // Twitter (1200x600)
   },
 };
 
