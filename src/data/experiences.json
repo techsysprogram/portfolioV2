@@ -1,12 +1,12 @@
 [
     {
       "id": 0,
-      "year": "2020 - Maintenant",
-      "title": "Freelance - Concepteur de logiciels sur mesure",
+      "year": "2020 - Aujourd'hui",
+      "title": "Développeur freelance | Logiciels et applications web sur mesure pour entreprises",
       "company": "Techsysprogram",
-      "description": "Depuis 2020, je conçois des logiciels sur mesure pour différents clients. Mon travail couvre des secteurs variés, allant de la gestion du toilettage canin à la gestion du stockage industriel, en passant par les appels aux webservices et les jeux interactifs. Mon approche repose sur une écoute attentive des besoins des clients et la conception de solutions adaptées à chaque domaine.",
+      "description": "Depuis 2020, je développe des logiciels sur mesure pour divers clients, couvrant des secteurs variés : gestion de toilettage canin, gestion du stockage industriel, intégration de webservices, ou encore conception de jeux interactifs. Chaque projet est conçu avec une approche centrée sur les besoins spécifiques du client, garantissant des solutions adaptées et performantes.",
       "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737904717/bouton_ulmprm.png",
-      "skills": ["WinDev", "Python", "C++", "Arduino", "HFSQL"],
+      "skills": ["WinDev","WordPress","PHP", "Python", "C++", "Arduino", "HFSQL"],
       "qualities": ["Autonomie", "Adaptabilité", "Gestion de projet", "Innovation"]
     },
     {
@@ -43,7 +43,7 @@
     },
     {
       "id": 5,
-      "year": "2021 - Maintenant",
+      "year": "2021 - Aujourd'hui",
       "title": "Formation : Développeur Web, E-learning",
       "company": "Autodidacte",
       "description": "Je me forme de manière autodidacte depuis 2021 sur différentes plateformes telles que Frontend Mentor, OpenClassrooms et YouTube. J'ai suivi des formations payantes de développeurs réputés, ainsi que des YouTubers bien connus tels que Benjamin Code, Grafikart, Melvynx, et d'autres créateurs francophones, hispanophones et anglophones spécialisés en développement web.",

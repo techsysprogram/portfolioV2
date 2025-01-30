@@ -14,7 +14,7 @@
       { "id": 14, "name": "Python", "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737737083/python-5_aqquxl.svg" },
       { "id": 24, "name": "WinDev", "image": "https://res.cloudinary.com/dshznc4xx/image/upload/c_crop,ar_1:1/v1737736515/windev_wedm8y.png" },
       { "id": 25, "name": "C++", "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737740033/c_x3chkb.svg" },
-      { "id": 26, "name": "Php", "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737741370/laragon_lahoeg.svg" }
+      { "id": 26, "name": "PHP", "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1738229475/php_sj4bl7.svg" }
     ],
     "backend": [
       { "id": 15, "name": "MongoDB", "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737735139/mongodb-icon-1_lceztg.svg" },
