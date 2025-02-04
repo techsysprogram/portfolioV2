@@ -103,10 +103,10 @@
   text-decoration: underline;
 }
 
-.description {
+/* .description {
   color: var(--foreground);
   margin-bottom: 10px;
-}
+} */
 
 /* Badges */
 .skills,

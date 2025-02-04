@@ -7,13 +7,13 @@
   margin-bottom: 40px;
 }
 
-.subtitle {
+/* .subtitle {
   font-size: 18px;
   font-weight: bold;
   color: var(--foreground);
   margin-top: 20px;
   margin-bottom: 10px;
-}
+} */
 
 .skillsGrid {
   display: flex;
@@ -55,10 +55,10 @@
   .skills {
     margin-top: 20px;
   }
-
+/* 
   .subtitle {
     font-size: 16px;
-  }
+  } */
 
   .skillsGrid {
     gap: 10px;
