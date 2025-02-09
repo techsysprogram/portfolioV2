@@ -19,6 +19,10 @@ interface Experience {
 export default function MonParcours() {
   const [isVisible, setIsVisible] = useState(false);
 
+
+  // Trier les posts par ID décroissant
+  const sortedExperiences = [...experiencesData].sort((a, b) => b.id - a.id);
+
   useEffect(() => {
     const handleScroll = () => {
       const section = document.getElementById("parcours");
@@ -43,7 +47,7 @@ export default function MonParcours() {
         <h2 className="title">Mon Parcours</h2>
       </section>
       <div className={styles.parcoursContainer}>
-        {experiencesData.map((exp: Experience) => (
+        {sortedExperiences.map((exp: Experience) => (
           <div key={exp.id} className={styles.experience}>
             <div className={styles.logoContainer}>
               {exp.image && (

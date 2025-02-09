@@ -84,5 +84,23 @@
         "url": "https://nextjs.org/"
       }
     ]
+  },
+  {
+    "id": 5,
+    "title": "Ma formation SaaS avec Next.js : Un pas de plus vers l'expertise",
+    "summary": "Une formation riche pour devenir un meilleur développeur Next.js et approfondir mes compétences en SaaS.",
+    "content": [
+      "Dans ma quête pour devenir un **excellent développeur Next.js**, j’ai décidé de suivre une formation approfondie sur le développement **SaaS** et les **architectures clean**.",
+      "Cette formation m’apporte une compréhension plus avancée des concepts essentiels comme **Next-Auth, Resend, RBAC, les DTO, et la gestion des permissions**. Elle couvre aussi des aspects pratiques comme la **création de dashboards optimisés** et l'utilisation de **ReChart** pour des visualisations de données dynamiques.",
+      "Un des points clés de cette formation est l'accent mis sur la **persistance des données**, les **services d'authentification** et les **design patterns** qui permettent d'écrire un code évolutif et maintenable.",
+      "Je suis particulièrement motivé par l'apprentissage de **la gestion avancée des API, l’optimisation des performances et l’implémentation d’une architecture robuste**.",
+      "Grâce à cette formation, je vais pouvoir améliorer mes **bonnes pratiques en développement web**, affiner ma capacité à construire des applications **scalables**, et renforcer mes connaissances en **sécurité et gestion des utilisateurs**.",
+      "Un parcours technique exigeant, mais qui me permet d’acquérir des compétences solides et adaptées aux besoins du marché SaaS !"
+    ],
+    "images": [
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1739109199/nextjs_c3nvhq.avif"
+    ],
+    "videos": [],
+    "links": []
   }
 ]

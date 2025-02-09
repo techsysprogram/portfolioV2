@@ -32,7 +32,7 @@
     ]
   },
   {
-    "id": 2,
+    "id": 5,
     "title": "Livret d'accueil numérique",
     "summary": "Un outil digital facilitant l’accueil et l’information des voyageurs dans les hébergements touristiques.",
     "description": [
@@ -67,7 +67,7 @@
     ]
   },
   {
-    "id": 5,
+    "id": 2,
     "title": "Marvel Clone",
     "summary": "Une application web permettant d’explorer l’univers Marvel à travers une interface fluide et intuitive.",
     "description": [
@@ -84,5 +84,22 @@
     "images": [
       "https://res.cloudinary.com/dshznc4xx/image/upload/v1737988714/Capture_d_e%CC%81cran_2025-01-27_a%CC%80_15.38.02_odllgm.png"
     ]
+  },
+  {
+    "id": 6,
+    "title": "Gestion de Stockage Industriel",
+    "summary": "Optimisation et suivi des équipements en milieu industriel",
+    "description": [
+      "Développé avec WinDev, ce logiciel est conçu pour améliorer la gestion des stocks et des équipements en milieu industriel.",
+      "Il permet un suivi précis des composants, des équipements et des fournisseurs, avec des indicateurs de performance et des alertes automatiques.",
+      "Le logiciel intègre un tableau de bord interactif avec des graphiques dynamiques pour analyser les pertes d’exploitation, la disponibilité des stocks et les délais de livraison.",
+      "Disponible en version PC et en mode SaaS, il offre une navigation intuitive, un système de recherche avancé et une gestion multi-utilisateurs sécurisée."
+    ],
+    "links": [],
+    "images": [
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1739106188/projets/fsbs96swmipsh607mzef.jpg",
+      "https://res.cloudinary.com/dshznc4xx/image/upload/v1739106192/projets/z3ahloua34qo5vj3mdyf.jpg"
+    ]
   }
+  
 ]

@@ -1,66 +1,122 @@
 [
-    {
-      "id": 0,
-      "year": "2020 - Aujourd'hui",
-      "title": "Développeur freelance | Logiciels et applications web sur mesure pour entreprises",
-      "company": "Techsysprogram",
-      "description": "Depuis 2020, je développe des logiciels sur mesure pour divers clients, couvrant des secteurs variés : gestion de toilettage canin, gestion du stockage industriel, intégration de webservices, ou encore conception de jeux interactifs. Chaque projet est conçu avec une approche centrée sur les besoins spécifiques du client, garantissant des solutions adaptées et performantes.",
-      "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737904717/bouton_ulmprm.png",
-      "skills": ["WinDev","WordPress","PHP", "Python", "C++", "Arduino", "HFSQL"],
-      "qualities": ["Autonomie", "Adaptabilité", "Gestion de projet", "Innovation"]
-    },
-    {
-      "id": 2,
-      "year": "Octobre 2024 - Décembre 2024",
-      "title": "Bootcamp : Développeur Full Stack",
-      "company": "Le Reacteur",
-      "description": "J'ai suivi une formation intensive chez Le Reacteur, un bootcamp réputé spécialisé en React et React Native. J'ai développé plusieurs projets concrets en travaillant avec des technologies modernes et en appliquant les meilleures pratiques du développement web.",
-      "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737889435/le_reacteur_duorls.png",
-      "link": "https://www.lereacteur.io/",
-      "skills": ["React", "React Native", "serverless", "Integration", "Express", "Node.js", "MongoDB"],
-      "qualities": ["Esprit analytique", "Polyvalence", "Adaptation Rapide"]
-    },
-    {
-      "id": 3,
-      "year": "Octobre 2022 - Novembre 2022",
-      "title": "Formation : Développement Web",
-      "company": "Noa Forma",
-      "description": "Une immersion complète dans le développement web, avec un focus sur la structuration des pages, l'interaction utilisateur et l'optimisation des performances.",
-      "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737889205/noafoma_xolatx.webp",
-      "skills": ["HTML5", "JavaScript", "CSS"],
-      "qualities": ["Autodiscipline", "Esprit logique", "Précision"]
-    },
-    {
-      "id": 4,
-      "year": "Janvier 2022 - Août 2022",
-      "title": "Formation : WordPress & PHP",
-      "company": "Neobridge",
-      "description": "J'ai suivi une formation approfondie en développement WordPress et PHP chez Neobridge, acquérant des compétences en gestion de CMS et développement backend.",
-      "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737889205/neobridget_oebhg5.jpg",
-      "link": "https://neobridge.com/",
-      "skills": ["WordPress", "PHP", "MySQL", "CSS", "JavaScript"],
-      "qualities": ["Autonomie", "Rigueur", "Créativité"]
-    },
-    {
-      "id": 5,
-      "year": "2021 - Aujourd'hui",
-      "title": "Formation : Développeur Web, E-learning",
-      "company": "Autodidacte",
-      "description": "Je me forme de manière autodidacte depuis 2021 sur différentes plateformes telles que Frontend Mentor, OpenClassrooms et YouTube. J'ai suivi des formations payantes de développeurs réputés, ainsi que des YouTubers bien connus tels que Benjamin Code, Grafikart, Melvynx, et d'autres créateurs francophones, hispanophones et anglophones spécialisés en développement web.",
-      "image": "https://res.cloudinary.com/dshznc4xx/image/upload/c_crop,ar_1:1/v1737892271/elearning_cuaw0p.jpg",
-      "skills": ["HTML", "CSS", "JavaScript", "React.js", "TypeScript", "Tailwind", "NextJS"],
-      "qualities": ["Autonomie", "Curiosité"]
-    },
-    {
-        "id": 6,
-        "year": "2013 - 2024",
-        "title": "CDI : Automatisation et Maintenance Industrielle",
-        "company": "Verallia",
-        "description": "Durant plus de 10 ans, j’ai travaillé dans l'industrie où j’étais en charge de l’automatisation et de la maintenance des machines. J’ai corrigé les systèmes existants afin de les améliorer, en apportant des solutions pour renforcer la sécurité, optimiser la cadence de production et améliorer l’interface utilisateur. J’ai également développé des solutions pour faciliter l’exploitation des machines.",
-        "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737987414/machine-process-2560x600_wc9wf1.jpg",
-        "skills": ["Automatisme industriel", "PL7 Pro", "Unity Pro", "Schneider", "PLC", "Électricité"],
-        "qualities": ["Rigueur", "Analyse", "Optimisation des processus", "Fiabilité"]
-      }
-      
-  ]
-  
+  {
+    "id": 5,
+    "year": "Février 2025 - Juin 2025",
+    "title": "Formation : Next.js Mastery",
+    "company": "Formation Avancée",
+    "description": "Une formation approfondie sur Next.js visant à maîtriser les concepts avancés du framework. Cette formation couvre des aspects clés tels que l'optimisation des performances, l'architecture SaaS, l'intégration des API, la gestion des rôles et permissions, et les meilleures pratiques en matière de développement full-stack avec Next.js.",
+    "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1739106053/projets/pqrbwgxux60p9szlwq62.png",
+    "skills": [
+      "Next.js",
+      "TypeScript",
+      "React Server Components",
+      "Edge Functions",
+      "GraphQL",
+      "SaaS Architecture"
+    ],
+    "qualities": ["Rigueur", "Approfondissement technique", "Maîtrise avancée"]
+  },
+  {
+    "id": 6,
+    "year": "2020 - Aujourd'hui",
+    "title": "Développeur freelance | Logiciels et applications web sur mesure pour entreprises",
+    "company": "Techsysprogram",
+    "description": "Depuis 2020, je développe des logiciels sur mesure pour divers clients, couvrant des secteurs variés : gestion de toilettage canin, gestion du stockage industriel, intégration de webservices, ou encore conception de jeux interactifs. Chaque projet est conçu avec une approche centrée sur les besoins spécifiques du client, garantissant des solutions adaptées et performantes.",
+    "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737904717/bouton_ulmprm.png",
+    "skills": [
+      "WinDev",
+      "WordPress",
+      "PHP",
+      "Python",
+      "C++",
+      "Arduino",
+      "HFSQL"
+    ],
+    "qualities": [
+      "Autonomie",
+      "Adaptabilité",
+      "Gestion de projet",
+      "Innovation"
+    ]
+  },
+  {
+    "id": 4,
+    "year": "Octobre 2024 - Décembre 2024",
+    "title": "Bootcamp : Développeur Full Stack",
+    "company": "Le Reacteur",
+    "description": "J'ai suivi une formation intensive chez Le Reacteur, un bootcamp réputé spécialisé en React et React Native. J'ai développé plusieurs projets concrets en travaillant avec des technologies modernes et en appliquant les meilleures pratiques du développement web.",
+    "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737889435/le_reacteur_duorls.png",
+    "link": "https://www.lereacteur.io/",
+    "skills": [
+      "React",
+      "React Native",
+      "serverless",
+      "Integration",
+      "Express",
+      "Node.js",
+      "MongoDB"
+    ],
+    "qualities": ["Esprit analytique", "Polyvalence", "Adaptation Rapide"]
+  },
+  {
+    "id": 3,
+    "year": "Octobre 2022 - Novembre 2022",
+    "title": "Formation : Développement Web",
+    "company": "Noa Forma",
+    "description": "Une immersion complète dans le développement web, avec un focus sur la structuration des pages, l'interaction utilisateur et l'optimisation des performances.",
+    "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737889205/noafoma_xolatx.webp",
+    "skills": ["HTML5", "JavaScript", "CSS"],
+    "qualities": ["Autodiscipline", "Esprit logique", "Précision"]
+  },
+  {
+    "id": 2,
+    "year": "Janvier 2022 - Août 2022",
+    "title": "Formation : WordPress & PHP",
+    "company": "Neobridge",
+    "description": "J'ai suivi une formation approfondie en développement WordPress et PHP chez Neobridge, acquérant des compétences en gestion de CMS et développement backend.",
+    "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737889205/neobridget_oebhg5.jpg",
+    "link": "https://neobridge.com/",
+    "skills": ["WordPress", "PHP", "MySQL", "CSS", "JavaScript"],
+    "qualities": ["Autonomie", "Rigueur", "Créativité"]
+  },
+  {
+    "id": 1,
+    "year": "2021 - 2022",
+    "title": "Formation : Développeur Web, E-learning",
+    "company": "Autodidacte",
+    "description": "Je me forme de manière autodidacte depuis 2021 sur différentes plateformes telles que Frontend Mentor, OpenClassrooms et YouTube. J'ai suivi des formations payantes de développeurs réputés, ainsi que des YouTubers bien connus tels que Benjamin Code, Grafikart, Melvynx, et d'autres créateurs francophones, hispanophones et anglophones spécialisés en développement web.",
+    "image": "https://res.cloudinary.com/dshznc4xx/image/upload/c_crop,ar_1:1/v1737892271/elearning_cuaw0p.jpg",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React.js",
+      "TypeScript",
+      "Tailwind",
+      "NextJS"
+    ],
+    "qualities": ["Autonomie", "Curiosité"]
+  },
+  {
+    "id": 0,
+    "year": "2013 - 2024",
+    "title": "CDI : Automatisation et Maintenance Industrielle",
+    "company": "Verallia",
+    "description": "Durant plus de 10 ans, j’ai travaillé dans l'industrie où j’étais en charge de l’automatisation et de la maintenance des machines. J’ai corrigé les systèmes existants afin de les améliorer, en apportant des solutions pour renforcer la sécurité, optimiser la cadence de production et améliorer l’interface utilisateur. J’ai également développé des solutions pour faciliter l’exploitation des machines.",
+    "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737987414/machine-process-2560x600_wc9wf1.jpg",
+    "skills": [
+      "Automatisme industriel",
+      "PL7 Pro",
+      "Unity Pro",
+      "Schneider",
+      "PLC",
+      "Électricité"
+    ],
+    "qualities": [
+      "Rigueur",
+      "Analyse",
+      "Optimisation des processus",
+      "Fiabilité"
+    ]
+  }
+]
