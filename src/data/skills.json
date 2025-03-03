@@ -14,14 +14,15 @@
     { "id": 10, "name": "Python", "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737737083/python-5_aqquxl.svg" },
     { "id": 11, "name": "WinDev", "image": "https://res.cloudinary.com/dshznc4xx/image/upload/c_crop,ar_1:1/v1737736515/windev_wedm8y.png" },
     { "id": 12, "name": "C++", "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737740033/c_x3chkb.svg" },
-    { "id": 13, "name": "PHP", "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1738229475/php_sj4bl7.svg" }
+    { "id": 13, "name": "PHP", "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1738229475/php_sj4bl7.svg" },
+    {"id" : 33, "name": "EcoStruxure", "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1741018222/Unity_548_369_kmobae.jpg"}
   ],
   "backend": [
     { "id": 15, "name": "Node.js", "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737735140/nodejs-2_jb5fqs.svg" },
     { "id": 16, "name": "Express", "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737735139/express-109_dpusg1.svg" },
     { "id": 17, "name": "MySQL", "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737741696/mysql-4_whxv4n.svg" },
     { "id": 14, "name": "MongoDB", "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737735139/mongodb-icon-1_lceztg.svg" },
-    { "id": 17, "name": "PostgreSQL", "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737741696/postgresql_vqakwd.svg" },
+    { "id": 32, "name": "PostgreSQL", "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737741696/postgresql_vqakwd.svg" },
     { "id": 20, "name": "SQLite", "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737741777/sqlite_inpz2m.svg" },
     { "id": 18, "name": "Drizzle", "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1739108581/drizzle_pxubme.jpg" },
     { "id": 28, "name": "OAuth & JWT", "image": "https://res.cloudinary.com/dshznc4xx/image/upload/v1737740381/jwt-3_ghqqwx.svg" },

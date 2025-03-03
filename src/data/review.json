@@ -1,17 +1,37 @@
 [
-    {
-      "_id": "1",
-      "user": "R-Tech System",
-      "avatar": "https://res.cloudinary.com/dshznc4xx/image/upload/v1738025009/user-placehold_s9aag7.jpg",
-      "rating": 5,
-      "reviewText": "Logiciel réalisé en totale conformité avec la demande, délais respectés, écoute, rigueur, flexibilité… je recommande, Merci Miguel"
-    },
-    {
-      "_id": "2",
-      "user": "Ma Conciergerie en Occitanie",
-      "avatar": "https://res.cloudinary.com/dshznc4xx/image/upload/v1738025009/user-placehold_s9aag7.jpg",
-      "rating": 5,
-      "reviewText": "Nous avons fait appel à Miguel pour la création d’un livret d’accueil, et nous sommes ravis du résultat ! Le document est clair et bien structuré. Grâce à son expertise, il a su rendre les informations accessibles et attractives. Un grand merci pour ta réactivité ! Nous recommandons sans hésitation."
-    }
-  ]
-  
+  {
+    "_id": "1",
+    "user": "Mariano Saul",
+    "avatar": "https://res.cloudinary.com/dshznc4xx/image/upload/v1738025009/user-placehold_s9aag7.jpg",
+    "rating": 5,
+    "reviewText": "Miguel est un chef de projet exceptionnel. Son sens de l’organisation et sa rigueur lui permettent de transmettre avec précision les exigences des clients, garantissant ainsi des résultats optimaux à tous égards (présentation, délais, etc.). Toujours clair dans ses évaluations, il sait créer un environnement de travail collaboratif, en restant ouvert aux nouvelles idées et aux suggestions pour améliorer les produits. Travailler avec lui au cours de ces cinq dernières années a été un véritable plaisir."
+  },
+  {
+    "_id": "2",
+    "user": "Angie B.",
+    "avatar": "https://res.cloudinary.com/dshznc4xx/image/upload/v1738025009/user-placehold_s9aag7.jpg",
+    "rating": 5,
+    "reviewText": "J'ai eu la chance de collaborer avec Miguel pour la création des guides d'entrée de Ma Conciergerie en Occitanie, et je ne peux que le recommander ! Tout au long du projet, Miguel a fait preuve d’une écoute active, prenant en compte chaque retour avec professionnalisme et bienveillance. Sa capacité à comprendre rapidement nos besoins spécifiques et à transformer nos idées en outils pratiques et esthétiques a largement dépassé mes attentes. Sa réactivité, sa flexibilité et son engagement sont de vrais atouts."
+  },
+  {
+    "_id": "3",
+    "user": "Tom Roberto",
+    "avatar": "https://res.cloudinary.com/dshznc4xx/image/upload/v1738025009/user-placehold_s9aag7.jpg",
+    "rating": 5,
+    "reviewText": "Miguel fait preuve d’une grande autonomie face aux problèmes rencontrés. Il est également rigoureux dans son travail, et est motivé pour approfondir ses compétences. Je suis convaincu que Miguel saura être un atout précieux dans n'importe quelle équipe de développement. Je le recommande sans hésitation pour toute opportunité qui lui permettrait de continuer à progresser et à mettre en valeur ses compétences. Par ailleurs, Miguel est quelqu'un très sympathique !"
+  },
+  {
+    "_id": "4",
+    "user": "Ma Conciergerie en Occitanie",
+    "avatar": "https://res.cloudinary.com/dshznc4xx/image/upload/v1738025009/user-placehold_s9aag7.jpg",
+    "rating": 5,
+    "reviewText": "Nous avons fait appel à Miguel pour la création d’un livret d’accueil, et nous sommes ravis du résultat ! Le document est clair et bien structuré. Grâce à son expertise, il a su rendre les informations accessibles et attractives. Un grand merci pour ta réactivité ! Nous recommandons sans hésitation."
+  },
+  {
+    "_id": "5",
+    "user": "R-Tech System",
+    "avatar": "https://res.cloudinary.com/dshznc4xx/image/upload/v1738025009/user-placehold_s9aag7.jpg",
+    "rating": 5,
+    "reviewText": "Logiciel réalisé en totale conformité avec la demande, délais respectés, écoute, rigueur, flexibilité… je recommande, Merci Miguel"
+  }
+]

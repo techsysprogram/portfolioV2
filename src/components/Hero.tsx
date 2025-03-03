@@ -53,6 +53,7 @@ export default function Hero() {
           width={70}
           height={70}
           className={`${styles.floatingIcon} ${icon.style}`}
+          loading="eager" 
         />
       ))}
 
@@ -64,6 +65,7 @@ export default function Hero() {
           height={200}
           priority
           className={styles.image}
+          loading="eager" 
         />
 
         <div className={styles.textContainer}>
