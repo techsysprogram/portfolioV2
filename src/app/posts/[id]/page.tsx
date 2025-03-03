@@ -7,7 +7,9 @@ import "@/styles/text-styles.css";
 import styles from "@/styles/components/post/PostDetails.module.css";
 import { ArrowLeft } from "lucide-react";
 import Button from "@/components/ui/Button";
+
 import Image from "next/image";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
