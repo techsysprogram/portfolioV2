@@ -22,7 +22,7 @@ export default function Contact() {
           variant="secondary"
           onClick={() =>
             window.open(
-              "https://filedn.eu/lWmHm0zj5cX4lKsrCUMs4HR/techsysprogram/CV%20Miguel%20Bellota.pdf",
+              "https://filedn.eu/lWmHm0zj5cX4lKsrCUMs4HR/techsysprogram/CV%20De%CC%81veloppeur%20Miguel%20Bellota.pdf",
               "_blank"
             )
           }
