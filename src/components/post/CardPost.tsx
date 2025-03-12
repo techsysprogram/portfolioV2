@@ -22,7 +22,7 @@ const CardPost = ({ post }: { post: Post }) => {
               width={300} 
               height={200} 
               className={styles.cardImage}
-              loading="eager" 
+              /* loading="eager"  */
             />
           </Link>
         </div>

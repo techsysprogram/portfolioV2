@@ -74,7 +74,7 @@ export default function PostDetails() {
                 width={800}
                 height={400}
                 className={styles.postImage}
-                loading="eager" 
+                /* loading="eager"  */
               />
             </SwiperSlide>
           ))}

@@ -57,7 +57,7 @@ export default function MonParcours() {
                   width={50}
                   height={50}
                   className={styles.logo}
-                  loading="eager" 
+                  /* loading="eager"  */
                 />
               )}
             </div>

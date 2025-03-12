@@ -25,7 +25,7 @@ const CardProjet = ({ project }: { project: Project }) => {
               width={300} // ✅ Remplace `layout="responsive"`
               height={200} // ✅ Ajout de la hauteur pour éviter l'erreur
               className={styles.cardImage}
-              loading="eager" 
+              /* loading="eager"  */
             />
           </Link>
         </div>

@@ -65,7 +65,7 @@ export default function Navbar() {
       <div className={styles.container}>
         <div className={styles.logoSection}>
           <Link href="/" className={styles.logo}>
-            Portfolio
+            Miguel Bellota
           </Link>
         </div>
         <ThemeToggle />
@@ -114,7 +114,7 @@ export default function Navbar() {
               alt="LinkedIn"
               width={24}
               height={24}
-              loading="eager" 
+              /* loading="eager"  */
             />
           </NavLink>
           <NavLink href="https://github.com/techsysprogram" external>
@@ -124,7 +124,7 @@ export default function Navbar() {
               width={24}
               height={24}
               style={{ filter: isDarkMode ? "invert(1)" : "none" }}
-              loading="eager"
+              /* loading="eager" */
             />
           </NavLink>
         </div>

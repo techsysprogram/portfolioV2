@@ -21,7 +21,7 @@ export default function Skills() {
               width={60}  // Largeur définie
               height={60} // Hauteur définie
               className={styles.skillImage} 
-              loading="eager" 
+              /* loading="eager"  */
             />
             <p className={styles.skillName}>{skill.name}</p>
           </div>
@@ -39,7 +39,7 @@ export default function Skills() {
               width={60} 
               height={60} 
               className={styles.skillImage} 
-              loading="eager" 
+              /* loading="eager" */ 
             />
             <p className={styles.skillName}>{skill.name}</p>
           </div>
@@ -57,7 +57,7 @@ export default function Skills() {
               width={60} 
               height={60} 
               className={styles.skillImage} 
-              loading="eager" 
+              /* loading="eager"  */
             />
             <p className={styles.skillName}>{skill.name}</p>
           </div>
@@ -75,7 +75,7 @@ export default function Skills() {
               width={60} 
               height={60} 
               className={styles.skillImage} 
-              loading="eager" 
+              /* loading="eager"  */
             />
             <p className={styles.skillName}>{skill.name}</p>
           </div>

@@ -82,7 +82,7 @@ export default function ProjectDetails() {
                 width={800}
                 height={400}
                 className={styles.projectImage}
-                loading="eager" 
+                /* loading="eager"  */
               />
             </SwiperSlide>
           ))}

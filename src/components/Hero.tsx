@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import styles from "@/styles/components/Hero.module.css";
 import "@/styles/text-styles.css";
@@ -25,55 +25,55 @@ export default function Hero() {
     "https://res.cloudinary.com/dshznc4xx/image/upload/a_hflip/v1738228843/MiguelPC_mfdchi.jpg"
   );
 
-  useEffect(() => {
-    const updateImage = () => {
-      if (window.innerWidth <= 768) {
-        setProfileImage(
-          "https://res.cloudinary.com/dshznc4xx/image/upload/v1737478718/MiguelPC_d1f2ux.jpg"
-        );
-      } else {
-        setProfileImage(
-          "https://res.cloudinary.com/dshznc4xx/image/upload/a_hflip/v1738228843/MiguelPC_mfdchi.jpg"
-        );
-      }
-    };
+  // Fonction optimisée avec useCallback
+  const updateImage = useCallback(() => {
+    setProfileImage(
+      window.innerWidth <= 768
+        ? "https://res.cloudinary.com/dshznc4xx/image/upload/v1737478718/MiguelPC_d1f2ux.jpg"
+        : "https://res.cloudinary.com/dshznc4xx/image/upload/a_hflip/v1738228843/MiguelPC_mfdchi.jpg"
+    );
+  }, []);
 
+  useEffect(() => {
     updateImage();
     window.addEventListener("resize", updateImage);
     return () => window.removeEventListener("resize", updateImage);
-  }, []);
+  }, [updateImage]);
 
   return (
     <header className={styles.hero}>
+      {/* Icônes flottantes avec animation */}
       {floatingIcons.map((icon) => (
         <Image
           key={icon.id}
           src={icon.image}
-          alt={icon.name}
+          alt={`Icône de ${icon.name}`}
           width={70}
           height={70}
           className={`${styles.floatingIcon} ${icon.style}`}
-          loading="eager" 
+          priority
         />
       ))}
 
       <div className={styles.container}>
         <Image
           src={profileImage}
-          alt="Miguel Bellota"
+          alt="Photo de Miguel Bellota, développeur"
           width={200}
           height={200}
           priority
           className={styles.image}
-          loading="eager" 
         />
 
         <div className={styles.textContainer}>
-          <h1 className="title color-white">Miguel Bellota</h1>
+          <h1 className="title color-white">
+            Créateur de logiciels & d’applications web sur mesure
+          </h1>
           <p className="text color-white">
-            Développeur Logiciel & Full Stack | Passionné par les technologies,
-            je conçois des applications intuitives et agréables à utiliser pour
-            offrir une expérience utilisateur optimale.
+            Développeur Logiciel & Full Stack | J’accompagne les entreprises
+            dans la conception de solutions digitales performantes, évolutives
+            et sécurisées. Mon objectif : offrir des applications intuitives et
+            optimisées pour une expérience utilisateur fluide.
           </p>
         </div>
       </div>
