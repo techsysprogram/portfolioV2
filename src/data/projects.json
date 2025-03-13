@@ -49,7 +49,7 @@
   },
   {
     "id": 2,
-    "title": "Marvel Clone",
+    "title": "Marvel",
     "summary": "Une application web permettant d’explorer l’univers Marvel à travers une interface fluide et intuitive.",
     "description": [
       "Développée avec la stack MERN (MongoDB, Express, React, Node.js), cette application permet aux utilisateurs de rechercher des personnages, comics et séries issus de l’univers Marvel grâce à l’API Marvel.",
@@ -58,7 +58,7 @@
     ],
     "links": [
       {
-        "name": "Marvel Clone - Recherche de super-héros",
+        "name": "Marvel - Recherche de super-héros",
         "url": "https://marvel-miguel.netlify.app/"
       }
     ],
