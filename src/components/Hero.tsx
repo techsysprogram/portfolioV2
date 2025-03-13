@@ -18,6 +18,13 @@ const floatingIcons = [
       "https://res.cloudinary.com/dshznc4xx/image/upload/v1737735139/react-2_r1cjjd.svg",
     style: styles.iconReact,
   },
+  {
+    id: 3,
+    name: "WinDev",
+    image:
+      "https://res.cloudinary.com/dshznc4xx/image/upload/c_crop,ar_1:1/v1737736515/windev_wedm8y.png",
+    style: styles.iconWindev, // Assure-toi d'ajouter ce style dans ton CSS
+  },
 ];
 
 export default function Hero() {
@@ -67,13 +74,12 @@ export default function Hero() {
 
         <div className={styles.textContainer}>
           <h1 className="title color-white">
-            Créateur de logiciels & d’applications web sur mesure
+            Conception & développement de solutions digitales sur mesure
           </h1>
           <p className="text color-white">
-            Développeur Logiciel & Full Stack | J’accompagne les entreprises
-            dans la conception de solutions digitales performantes, évolutives
-            et sécurisées. Mon objectif : offrir des applications intuitives et
-            optimisées pour une expérience utilisateur fluide.
+            Développeur Full Stack | Logiciels & applications web performants,
+            évolutifs et sécurisés. Créons ensemble des outils adaptés à vos
+            ambitions.
           </p>
         </div>
       </div>

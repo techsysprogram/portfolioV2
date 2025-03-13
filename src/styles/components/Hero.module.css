@@ -70,14 +70,14 @@
 }
 
 .iconReact {
-  top: 27%;
+  top: 15%;
   right: 6%;
   animation-delay: 0.7s;
 }
 
-.iconTS {
-  bottom: 10%;
-  right: 20%;
+.iconWindev {
+  bottom: -10%;
+  right: 10%;
   animation-delay: 1s;
 }
 
