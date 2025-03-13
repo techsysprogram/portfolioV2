@@ -1,0 +1,26 @@
+.container {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .linksList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .linksList li {
+    margin: 10px 0;
+  }
+  
+  .link {
+    color: var(--foreground);
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .link:hover {
+    color: #00bcd4; /* Bleu Next.js */
+  }
+  

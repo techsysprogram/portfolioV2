@@ -12,12 +12,11 @@ export default function Contact() {
         CDI en mode hybride et ouvert aux opportunités.
       </p>
       <div className={styles.buttons}>
-        <Button
-          variant="primary"
-          onClick={() => (window.location.href = "mailto:votre@email.com")}
-        >
-          Me Contacter
-        </Button>
+        {/* ✅ Utilisation de <a> pour ouvrir l'email */}
+        <a href="mailto:techsysprogram@gmail.com">
+          <Button variant="primary">Me Contacter</Button>
+        </a>
+
         <Button
           variant="secondary"
           onClick={() =>

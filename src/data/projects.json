@@ -48,25 +48,6 @@
     ]
   },
   {
-    "id": 1,
-    "title": "Vinted Clone",
-    "summary": "Une plateforme d’achat et de vente de vêtements d’occasion inspirée du site Vinted.",
-    "description": [
-      "Ce projet fullstack a été développé avec la stack MERN (MongoDB, Express, React, Node.js) pour reproduire les fonctionnalités principales de Vinted.",
-      "Les utilisateurs peuvent créer un compte, publier des annonces avec images, filtrer les produits par prix et catégories, et simuler un paiement avec Stripe.",
-      "J’ai porté une attention particulière à l’ergonomie et à la fluidité de navigation, tout en optimisant l’affichage pour une expérience optimale sur desktop uniquement."
-    ],
-    "links": [
-      {
-        "name": "Vinted Clone - Site de revente d’articles",
-        "url": "https://vinted-miguel.netlify.app/"
-      }
-    ],
-    "images": [
-      "https://res.cloudinary.com/dshznc4xx/image/upload/v1737989139/Capture_d_e%CC%81cran_2025-01-27_a%CC%80_15.45.26_aqshct.png"
-    ]
-  },
-  {
     "id": 2,
     "title": "Marvel Clone",
     "summary": "Une application web permettant d’explorer l’univers Marvel à travers une interface fluide et intuitive.",

@@ -4,6 +4,27 @@
   text-align: center;
   padding: 20px;
   border-top: 1px solid var(--gray-alpha-200);
-  position: relative; /* Assure qu'il ne passe pas derrière */
-  z-index: 10; /* Assure qu'il est bien visible */
+  position: relative;
+  z-index: 10;
+  display: flex; /* Ajout */
+  flex-direction: column; /* Pour aligner verticalement */
+  align-items: center; /* Centrage horizontal */
+}
+
+.links {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.link {
+  color: var(--foreground); /* Utiliser la couleur du thème */
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease-in-out;
+}
+
+.link:hover {
+  color: #00bcd4; /* Bleu clair Next.js */
 }

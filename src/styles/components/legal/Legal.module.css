@@ -1,0 +1,58 @@
+.legalContainer {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px;
+  text-align: left;
+}
+
+.legalTitle {
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--foreground);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.legalSubtitle {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--primary);
+  margin-top: 30px;
+}
+
+.legalText {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--foreground);
+}
+
+.legalList {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.legalLink {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.legalLink:hover {
+  color: var(--accent);
+}
+
+/* ✅ Adaptation du style du bouton comme dans ProjectDetails.module.css */
+.legalBackButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* ✅ Cacher les flèches si une seule slide */
+@media screen and (max-width: 768px) {
+  .legalContainer {
+    margin-top: 40px;
+    padding: 0px;
+  }
+}
